@@ -69,7 +69,7 @@ namespace Pawlio.Controllers
                 animal.ImageId = Guid.NewGuid().ToString();
 
             animal.UpdaterId = user.Id;
-            animal.Updated = DateTimeOffset.Now;
+            animal.Updated = DateTimeOffset.UtcNow;
             _context.Entry(animal).State = EntityState.Modified;
             await _context.SaveAsync(this);
 

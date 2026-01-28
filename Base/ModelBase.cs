@@ -10,7 +10,7 @@ public class ModelBase
     public required Flavor Flavor { get; set; } = Flavor.Pawlio;
 
     [JsonIgnore]
-    public DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 
     public int? CreaterId { get; set; }
 

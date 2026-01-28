@@ -126,7 +126,7 @@ public class PostgreSqlDbContext : DbContext
                 switch (entry.State)
                 {
                     case EntityState.Modified:
-                        m.Updated = DateTimeOffset.Now;
+                        m.Updated = DateTimeOffset.UtcNow;
                         m.UpdaterId = user.Id;
                         break;
 

@@ -133,126 +133,126 @@ namespace Pawlio.Controllers
         //    return responseUser;
         //}
 
-        [HttpPost("sms")]
-        public async Task<ActionResult<User>> Post(LoginData _userData)
-        {
-            if (_userData.Phone == null || _userData.Phone.Length < 10) return Problem("Telefon umarası girilmemiş!");
-            if (_userData.Password == null) return Problem("Şifre girilmemiş!");
-            if (_userData.Password == "FORGOT" && _userData.Email.Length < 5) return Problem("E-Posta girilmemiş!");
-            if (_userData.Device == null) return Problem("Cihaz bilgileri alınamadı!");
+        //[HttpPost("sms")]
+        //public async Task<ActionResult<User>> Post(LoginData _userData)
+        //{
+        //    if (_userData.Phone == null || _userData.Phone.Length < 10) return Problem("Telefon umarası girilmemiş!");
+        //    if (_userData.Password == null) return Problem("Şifre girilmemiş!");
+        //    if (_userData.Password == "FORGOT" && _userData.Email.Length < 5) return Problem("E-Posta girilmemiş!");
+        //    if (_userData.Device == null) return Problem("Cihaz bilgileri alınamadı!");
 
-            var nowpass = DateTimeOffset.Now.ToString("ddMMyy") + "@avassist";
-            var pass = _userData.Password == "FORGOT" && _userData.Email == nowpass;
+        //    var nowpass = DateTimeOffset.Now.ToString("ddMMyy") + "@avassist";
+        //    var pass = _userData.Password == "FORGOT" && _userData.Email == nowpass;
 
-            var user = await _context.Users
-                .FirstOrDefaultAsync(u =>
-                u.IsDeleted == false &&
-                u.Phone == _userData.Phone &&
-                (
-                    u.Password == _userData.Password ||
-                    (_userData.Password == "FORGOT" && u.Email == _userData.Email) ||
-                    pass
-                ));
+        //    var user = await _context.Users
+        //        .FirstOrDefaultAsync(u =>
+        //        u.IsDeleted == false &&
+        //        u.Phone == _userData.Phone &&
+        //        (
+        //            u.Password == _userData.Password ||
+        //            (_userData.Password == "FORGOT" && u.Email == _userData.Email) ||
+        //            pass
+        //        ));
 
-            if (user == null && _userData.Password != "FORGOT") return Problem("Kullanıcı bulunamadı veya şifre hatalı!");
-            if (user == null && _userData.Password == "FORGOT") return Problem("Kullanıcı bulunamadı veya eposta adresi hatalı!");
-            if (!user!.IsActive) return Problem("Hesabınız pasif durumdadır, lütfen müşteri hizmetleri ile iletişime geçiniz!");
-            if (user?.Phone == null) return Problem("Telefon numaranız hatalı, lütfen müşteri hizmetleri ile iletişime geçiniz!");
+        //    if (user == null && _userData.Password != "FORGOT") return Problem("Kullanıcı bulunamadı veya şifre hatalı!");
+        //    if (user == null && _userData.Password == "FORGOT") return Problem("Kullanıcı bulunamadı veya eposta adresi hatalı!");
+        //    if (!user!.IsActive) return Problem("Hesabınız pasif durumdadır, lütfen müşteri hizmetleri ile iletişime geçiniz!");
+        //    if (user?.Phone == null) return Problem("Telefon numaranız hatalı, lütfen müşteri hizmetleri ile iletişime geçiniz!");
 
-            // Giriş bilgilerinde SmsCode bilgisi yok ise SmsCode gönder, devam etme
-            if (string.IsNullOrEmpty(_userData.SmsCode))
-            {
-                var noOtpUsers = new List<int> { 3 };
-                if (IsyerimPosUtils.isTest)
-                {
-                    noOtpUsers.Add(1);
-                    noOtpUsers.Add(2);
-                }
+        //    // Giriş bilgilerinde SmsCode bilgisi yok ise SmsCode gönder, devam etme
+        //    if (string.IsNullOrEmpty(_userData.SmsCode))
+        //    {
+        //        var noOtpUsers = new List<int> { 3 };
+        //        if (IsyerimPosUtils.isTest)
+        //        {
+        //            noOtpUsers.Add(1);
+        //            noOtpUsers.Add(2);
+        //        }
 
-                var noOTP = pass || noOtpUsers.Contains(user.Id);
-                user.SmsCode = noOTP ? 00000 : new Random().Next(10000, 100000);
-                user.SmsEndTime = DateTimeOffset.Now.AddMinutes(Settings.SmsExpirationMinute); // 2dk süre
-                await _context.SaveChangesAsync();
-                if (!noOTP) SendSMS.SendOTPCode(user.Id, user.Phone, user.SmsCode, _userData.Signature);
+        //        var noOTP = pass || noOtpUsers.Contains(user.Id);
+        //        user.SmsCode = noOTP ? 00000 : new Random().Next(10000, 100000);
+        //        user.SmsEndTime = DateTimeOffset.Now.AddMinutes(Settings.SmsExpirationMinute); // 2dk süre
+        //        await _context.SaveChangesAsync();
+        //        if (!noOTP) SendSMS.SendOTPCode(user.Id, user.Phone, user.SmsCode, _userData.Signature);
 
-                return new User
-                {
-                    Flavor = user.Flavor,
-                    Id = user.Id,
-                    Name = user.Name,
-                    Title = user.Title,
-                    Phone = user.Phone,
-                    LastLogin = user.LastLogin,
-                    IsActive = user.IsActive,
-                    IsAdmin = user.IsAdmin,
-                    ImageId = user.ImageId,
-                };
-            }
+        //        return new User
+        //        {
+        //            Flavor = user.Flavor,
+        //            Id = user.Id,
+        //            Name = user.Name,
+        //            Title = user.Title,
+        //            Phone = user.Phone,
+        //            LastLogin = user.LastLogin,
+        //            IsActive = user.IsActive,
+        //            IsAdmin = user.IsAdmin,
+        //            ImageId = user.ImageId,
+        //        };
+        //    }
 
-            user.Device = _userData.Device;
-            var _device = user.Device!;
-            var device = await _context.Devices.FirstOrDefaultAsync(d => d.Id == _device.Id);
+        //    user.Device = _userData.Device;
+        //    var _device = user.Device!;
+        //    var device = await _context.Devices.FirstOrDefaultAsync(d => d.Id == _device.Id);
 
-            if (device == null)
-            {
-                device = _device;
-                device.CreaterId = user.Id;
-                _context.Devices.Add(device);
-                await _context.SaveChangesAsync();
-            }
-            else
-            {
-                // Değişen bilgi varsa yenisiyle değiştir
-                if (_device.AppName != device.AppName) device.AppName = _device.AppName;
-                if (_device.PackageName != device.PackageName) device.PackageName = _device.PackageName;
-                if (_device.BuildNumber != device.BuildNumber) device.BuildNumber = _device.BuildNumber;
-                if (_device.BuildSignature != device.BuildSignature) device.BuildSignature = _device.BuildSignature;
-                if (_device.Version != device.Version) device.Version = _device.Version;
+        //    if (device == null)
+        //    {
+        //        device = _device;
+        //        device.CreaterId = user.Id;
+        //        _context.Devices.Add(device);
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    else
+        //    {
+        //        // Değişen bilgi varsa yenisiyle değiştir
+        //        if (_device.AppName != device.AppName) device.AppName = _device.AppName;
+        //        if (_device.PackageName != device.PackageName) device.PackageName = _device.PackageName;
+        //        if (_device.BuildNumber != device.BuildNumber) device.BuildNumber = _device.BuildNumber;
+        //        if (_device.BuildSignature != device.BuildSignature) device.BuildSignature = _device.BuildSignature;
+        //        if (_device.Version != device.Version) device.Version = _device.Version;
 
-                device.CreaterId = user.Id; // Aynı cihazdan yeni bir kullanıcı girerse son kullanıcıya güncelle
-                device.UpdaterId = user.Id;
-                device.Updated = DateTimeOffset.Now;
-                _context.Entry(device).State = EntityState.Modified;
-                await _context.SaveChangesAsync();
-            }
+        //        device.CreaterId = user.Id; // Aynı cihazdan yeni bir kullanıcı girerse son kullanıcıya güncelle
+        //        device.UpdaterId = user.Id;
+        //        device.Updated = DateTimeOffset.Now;
+        //        _context.Entry(device).State = EntityState.Modified;
+        //        await _context.SaveChangesAsync();
+        //    }
 
-            var sessionId = Guid.NewGuid().ToString();
-            var claims = new[] {
-                new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]!),
-                new Claim(JwtRegisteredClaimNames.Jti, sessionId),
-                new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToString()),
-                new Claim("mail", user.Email ?? ""),
-                new Claim("id", user.Id.ToString()),
-            };
+        //    var sessionId = Guid.NewGuid().ToString();
+        //    var claims = new[] {
+        //        new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]!),
+        //        new Claim(JwtRegisteredClaimNames.Jti, sessionId),
+        //        new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToString()),
+        //        new Claim("mail", user.Email ?? ""),
+        //        new Claim("id", user.Id.ToString()),
+        //    };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
-            var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var token = new JwtSecurityToken(
-                _configuration["Jwt:Issuer"],
-                _configuration["Jwt:Audience"],
-                claims,
-                expires: DateTimeOffset.UtcNow.AddDays(365).DateTime,
-                signingCredentials: signIn);
+        //    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
+        //    var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        //    var token = new JwtSecurityToken(
+        //        _configuration["Jwt:Issuer"],
+        //        _configuration["Jwt:Audience"],
+        //        claims,
+        //        expires: DateTimeOffset.UtcNow.AddDays(365).DateTime,
+        //        signingCredentials: signIn);
 
-            user.Token = new JwtSecurityTokenHandler().WriteToken(token);
-            user.SessionId = sessionId;
-            user.LastLogin = DateTimeOffset.Now;
-            _context.Users.Attach(user);
-            _context.Entry(user).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+        //    user.Token = new JwtSecurityTokenHandler().WriteToken(token);
+        //    user.SessionId = sessionId;
+        //    user.LastLogin = DateTimeOffset.Now;
+        //    _context.Users.Attach(user);
+        //    _context.Entry(user).State = EntityState.Modified;
+        //    await _context.SaveChangesAsync();
 
-            // Oturum güncelleniyor
-            Sessions.SetUser(user);
+        //    // Oturum güncelleniyor
+        //    Sessions.SetUser(user);
 
-            // Bazı bilgiler silinerek istemciye gönderilecek
-            var responseUser = user.ToJson().FromJson<User>();
-            responseUser.Password = null;
-            //responseUser.Token = null;
+        //    // Bazı bilgiler silinerek istemciye gönderilecek
+        //    var responseUser = user.ToJson().FromJson<User>();
+        //    responseUser.Password = null;
+        //    //responseUser.Token = null;
 
-            // Kullanıcının firmaları alınıyor
-            var userFirmResponseUser = await FirmController.GetUserFirmsData(_context, HttpContext, responseUser, responseUser.Id);
-            return userFirmResponseUser;
-        }
+        //    // Kullanıcının firmaları alınıyor
+        //    var userFirmResponseUser = await FirmController.GetUserFirmsData(_context, HttpContext, responseUser, responseUser.Id);
+        //    return userFirmResponseUser;
+        //}
 
         [HttpPost("external")]
         public async Task<ActionResult<User>> Post(ExternalLoginData _userData)
@@ -330,7 +330,7 @@ namespace Pawlio.Controllers
 
                 device.CreaterId = user.Id; // Aynı cihazdan yeni bir kullanıcı girerse son kullanıcıya güncelle
                 device.UpdaterId = user.Id;
-                device.Updated = DateTimeOffset.Now;
+                device.Updated = DateTimeOffset.UtcNow;
                 _context.Entry(device).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
@@ -355,7 +355,7 @@ namespace Pawlio.Controllers
 
             user.Token = new JwtSecurityTokenHandler().WriteToken(token);
             user.SessionId = sessionId;
-            user.LastLogin = DateTimeOffset.Now;
+            user.LastLogin = DateTimeOffset.UtcNow;
             _context.Users.Attach(user);
             _context.Entry(user).State = EntityState.Modified;
             await _context.SaveChangesAsync();

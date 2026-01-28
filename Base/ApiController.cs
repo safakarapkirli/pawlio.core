@@ -50,6 +50,7 @@ namespace Pawlio.Controllers
             int.TryParse(_posId, out int posId);
 
             string? deviceId = Request.Headers?["DI"];
+            string? language = Request.Headers?["Lang"];
 
             var claimsIdentity = User.Identity as ClaimsIdentity;
             var userId = (claimsIdentity?.FindFirst("id")?.Value ?? "0").ToInt();
@@ -58,7 +59,7 @@ namespace Pawlio.Controllers
             var user = Sessions.GetUser(userId);
             if (user.SessionId != sessionId && posId == 0) throw new Exception("LOGOUT");
 
-            return _user = new TokenUser((Flavor)flavor, userId, sessionId, firmId, branchId, user, posId, deviceId ?? "");
+            return _user = new TokenUser((Flavor)flavor, userId, sessionId, firmId, branchId, user, posId, deviceId ?? "", language ?? "en");
         }
 
         [NonAction]

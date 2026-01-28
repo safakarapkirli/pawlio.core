@@ -296,7 +296,7 @@ namespace Pawlio.Controllers
             firm.Lat = data.Lat;
             firm.Lon = data.Lon;
             firm.UpdaterId = user.Id;
-            firm.Updated = DateTimeOffset.Now;
+            firm.Updated = DateTimeOffset.UtcNow;
             await _context.SaveAsync(this);
 
             if (firm.ImageData != null)
@@ -333,7 +333,7 @@ namespace Pawlio.Controllers
                 if (firm.ImageData != null) firm.ImageId = Guid.NewGuid().ToString();
                 firm.CreaterId = user.Id;
                 //firm.PackageId = 1; // Standart paket
-                firm.TimeOut = DateTimeOffset.Now.AddMonths(2).Date; // Firmanın ücretsiz kullanım süresi
+                firm.TimeOut = DateTimeOffset.UtcNow.AddYears(10).Date; // Firmanın ücretsiz kullanım süresi
                 _context.Firms.Add(firm);
                 await _context.SaveAsync(this);
 
@@ -351,7 +351,14 @@ namespace Pawlio.Controllers
                 _context.UserFirms.Add(userFirm);
 
                 // Ana şube
-                var branch = new Branch { Flavor = firm.Flavor, FirmId = firm.Id, Name = "Ana Şube", CreaterId = user.Id };
+                var branch = new Branch
+                {
+                    Flavor = firm.Flavor,
+                    FirmId = firm.Id,
+                    Name = user.isTr ? "Ana Şube" : "Main Branch",
+                    CreaterId = user.Id
+                };
+
                 _context.Branches.Add(branch);
 
                 // Firma-user ve şube kaydediliyor
@@ -1344,7 +1351,7 @@ namespace Pawlio.Controllers
             var user = this.GetUser();
             if (id != branch.Id) return Problem();
             branch.UpdaterId = user.Id;
-            branch.Updated = DateTimeOffset.Now;
+            branch.Updated = DateTimeOffset.UtcNow;
             _context.Entry(branch).State = EntityState.Modified;
             await _context.SaveAsync(this);
 
@@ -1400,7 +1407,7 @@ namespace Pawlio.Controllers
         {
             lock (sharedFirms)
             {
-                var olds = sharedFirms.Where(s => s.Value.date < DateTimeOffset.Now).ToList();
+                var olds = sharedFirms.Where(s => s.Value.date < DateTimeOffset.UtcNow).ToList();
                 if (olds.Count > 0)
                     foreach (var o in olds)
                         sharedFirms.Remove(o.Key);
@@ -1436,7 +1443,7 @@ namespace Pawlio.Controllers
             //    return Problem($"'{package.Name} Paket' {package.UserCount} kullanıcı ile sınırlıdır. Yeni kullanıcı eklemek için paketinizi yükseltmelisiniz!");
 
             string key = firm.Firm.Id.Digit(4, '0') + "-" + new Random().Next(1000, 10000);
-            addShares(key, new { date = DateTimeOffset.Now.AddMinutes(5), firmId = firm.FirmId, data, branches, used = false });
+            addShares(key, new { date = DateTimeOffset.UtcNow.AddMinutes(5), firmId = firm.FirmId, data, branches, used = false });
             return key;
         }
 

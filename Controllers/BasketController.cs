@@ -170,7 +170,7 @@ namespace Pawlio.Controllers
 
                         accounting.BasketId = basket.Id;
                         accounting.CreaterId = user.Id;
-                        accounting.Created = DateTimeOffset.Now;
+                        accounting.Created = DateTimeOffset.UtcNow;
                         accounting.FirmId = user.FirmId;
                         accounting.BranchId = user.BranchId;
                         _context.Accountings.Add(accounting);
@@ -342,9 +342,9 @@ namespace Pawlio.Controllers
 
             void SendSignal()
             {
-                 _mainHub.Clients.Groups("user-" + user.Id).SendAsync(
-                     request.Cancel ? "cancelComplate" : "payComplate", 
-                     request.Success.ToString().ToLower(), request.Message, newBasket.Uid);
+                _mainHub.Clients.Groups("user-" + user.Id).SendAsync(
+                    request.Cancel ? "cancelComplate" : "payComplate",
+                    request.Success.ToString().ToLower(), request.Message, newBasket.Uid);
             }
 
             if (!userBaskets.TryGetValue(user.Id, out var basket))
@@ -357,7 +357,8 @@ namespace Pawlio.Controllers
                     await DeleteBasket(basket.Id);
                     SendSignal();
                     return Ok("İşlem iptal edildi.");
-                } else
+                }
+                else
                 {
                     SendSignal();
                     return Ok("İşlem iptal edilemedi!");
@@ -378,7 +379,7 @@ namespace Pawlio.Controllers
                 await Add(new BasketRequest { Basket = newBasket });
                 SendSignal();
                 return Ok("Ödeme başarıyla alındı.");
-            } 
+            }
             else
             {
                 SendSignal();

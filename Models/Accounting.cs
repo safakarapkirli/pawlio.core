@@ -162,9 +162,9 @@ public class BaseAccounting : ModelBase
     [MaxLength(2048)]
     public string Data { get; set; } = "";
 
-    public DateTimeOffset Date { get; set; } = DateTimeOffset.Now;
+    public DateTimeOffset Date { get; set; } = DateTimeOffset.UtcNow;
 
-    public new DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public new DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 
     [JsonIgnore]
     public bool IsDeleted { get; set; }

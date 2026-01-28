@@ -73,7 +73,7 @@ namespace Pawlio.Controllers
                 customer.ImageId = Guid.NewGuid().ToString();
 
             customer.UpdaterId = user.Id;
-            customer.Updated = DateTimeOffset.Now;
+            customer.Updated = DateTimeOffset.UtcNow;
             _context.Entry(customer).State = EntityState.Modified;
             await _context.SaveAsync(this);
 
@@ -143,7 +143,7 @@ namespace Pawlio.Controllers
             // Toplam mushasebe işlemleri
             var mounthlyReport = await _context.Accountings.AsNoTracking()
                 .Where(a => a.CustomerId == id && !a.IsDeleted &&
-                    new AccountingTypes[] { 
+                    new AccountingTypes[] {
                         AccountingTypes.SaleProduct,
                         AccountingTypes.Service,
                         AccountingTypes.Vaccine,

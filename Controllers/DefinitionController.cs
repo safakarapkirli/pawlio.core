@@ -49,7 +49,7 @@ namespace Pawlio.Controllers
 
             definition.FirmId = user.FirmId;
             definition.CreaterId = user.Id;
-            if (string.IsNullOrEmpty(definition.Key)) definition.Key = string.IsNullOrEmpty(definition.NameEn) ? definition.NameTr: definition.NameEn;
+            if (string.IsNullOrEmpty(definition.Key)) definition.Key = string.IsNullOrEmpty(definition.NameEn) ? definition.NameTr : definition.NameEn;
             _context.Definitions.Add(definition);
             await _context.SaveAsync(this);
 
@@ -65,7 +65,7 @@ namespace Pawlio.Controllers
             //        newDefinitions.Add(new Definition { Key = "vaccine", Name = "Aşılar", ParentId = definition.Id, CreaterId = user.Id, FirmId = user.FirmId, AddSubDefinitions = true, Static = true, ValueType = DefinitionValueType.Vaccine });
             //        newDefinitions.Add(new Definition { Key = "insemition", Name = "Tohumlama", ParentId = definition.Id, CreaterId = user.Id, FirmId = user.FirmId, AddSubDefinitions = true, Static = true, ValueType = DefinitionValueType.Inseminition });
             //        newDefinitions.Add(new Definition { Key = "operation", Name = "Hizmetler", ParentId = definition.Id, CreaterId = user.Id, FirmId = user.FirmId, AddSubDefinitions = true, Static = true, ValueType = DefinitionValueType.Service });
-                    
+
             //        // Listedeki tanımlar DB ye ekleniyor
             //        _context.Definitions.AddRange(newDefinitions);
             //        // Hasta Türü altındaki işlemler kaydediliyor
@@ -113,7 +113,7 @@ namespace Pawlio.Controllers
             if (definition == null) return NotFound();
 
             definition.UpdaterId = user.Id;
-            definition.Updated = DateTimeOffset.Now;
+            definition.Updated = DateTimeOffset.UtcNow;
             await _context.SaveAsync(this);
 
             _context.Definitions.Remove(definition);

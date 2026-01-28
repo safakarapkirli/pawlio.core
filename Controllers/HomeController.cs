@@ -21,7 +21,7 @@ namespace Pawlio.Controllers
 
             var firm = await _context.Firms.FirstOrDefaultAsync(f => f.Id == user.FirmId);
             if (firm == null) return Problem("Firma bulunamadı!");
-            if (firm.TimeOut < DateTimeOffset.Now) return Problem("timeout");
+            //if (firm.TimeOut < DateTimeOffset.Now) return Problem("timeout");
 
             var query = _context.Baskets.AsQueryable();
             query = query.Include(b => b.Accountings)!.ThenInclude(a => a.ImageModels);
@@ -38,7 +38,7 @@ namespace Pawlio.Controllers
                 .Where(a =>
                     a.FirmId == user.FirmId &&
                     a.BranchId == user.BranchId &&
-                    a.Created.Date == DateTimeOffset.Now.Date &&
+                    a.Created.Date == DateTimeOffset.UtcNow.Date &&
                     !a.IsDeleted)
                 .ToBasket();
 
@@ -86,7 +86,7 @@ namespace Pawlio.Controllers
                 .ToAppointment()
                 .ToListAsync<dynamic>();
 
-            var startDate = DateTimeOffset.Now.AddMonths(-1);
+            var startDate = DateTimeOffset.UtcNow.AddMonths(-1);
             var monthlyCustomers = await _context.Baskets
                 .Where(b => b.FirmId == user.FirmId && b.BranchId == user.BranchId && b.CustomerId != null && b.Created > startDate)
                 .GroupBy(b => b.Created.Date)

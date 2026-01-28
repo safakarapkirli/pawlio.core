@@ -33,5 +33,5 @@ public class ProductPriceHistory
 
     public int? CreaterId { get; set; }
 
-    public virtual DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public virtual DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 }

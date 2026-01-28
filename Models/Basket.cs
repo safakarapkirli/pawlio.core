@@ -60,7 +60,7 @@ public class BaseBasket : ModelBase
     // Vuk507 fatura no
     public string InvoiceNo { get; set; } = "";
 
-    public new DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public new DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 
     [JsonIgnore]
     public bool IsDeleted { get; set; }

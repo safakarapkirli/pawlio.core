@@ -83,7 +83,7 @@ namespace Pawlio.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> CreateUser(User user)
         {
-            var existUser = await _context.Users.FirstOrDefaultAsync(u => 
+            var existUser = await _context.Users.FirstOrDefaultAsync(u =>
                 (u.Email.ToLower() == user.Email.ToLower() || u.Phone == user.Phone) && !u.IsDeleted //  || u.IdentityNumber == user.IdentityNumber
             );
 
@@ -113,197 +113,197 @@ namespace Pawlio.Controllers
             return user;
         }
 
-        [AllowAnonymous]
-        [HttpPost("forgot/{email}")]
-        public async Task<ActionResult> ForgotPassword(string email)
-        {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email && !u.IsDeleted);
-            if (user == null) return Problem("User not found!");
-            //user.ForgotPasswordCheckCode = new Random().Next(10000, 99999).ToString();
-            //user.ForgotPasswordDateTime = DateTime.Now;
-            await _context.SaveChangesAsync();
+        // [AllowAnonymous]
+        // [HttpPost("forgot/{email}")]
+        // public async Task<ActionResult> ForgotPassword(string email)
+        // {
+        //     var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email && !u.IsDeleted);
+        //     if (user == null) return Problem("User not found!");
+        //     //user.ForgotPasswordCheckCode = new Random().Next(10000, 99999).ToString();
+        //     //user.ForgotPasswordDateTime = DateTime.Now;
+        //     await _context.SaveChangesAsync();
 
-            //var mailStatus = Send.SendMail(user.Email, "Forgot Password", "Your code is " + user.ForgotPasswordCheckCode);
-            //if (!mailStatus.IsDone) return Problem(mailStatus.Message);
+        //     //var mailStatus = Send.SendMail(user.Email, "Forgot Password", "Your code is " + user.ForgotPasswordCheckCode);
+        //     //if (!mailStatus.IsDone) return Problem(mailStatus.Message);
 
-            //await FirebaseUtils.client.ResetEmailPasswordAsync(email);
-            return Ok("Verification code sent to your email address!");
-        }
+        //     //await FirebaseUtils.client.ResetEmailPasswordAsync(email);
+        //     return Ok("Verification code sent to your email address!");
+        // }
 
-        [HttpPost("updateAbout")]
-        public async Task<ActionResult> UpdateAbout([FromBody] object data)
-        {
-            string about = data.ToDynamic()!.about;
-            if (about.Length > 1000) about = about.Left(1000)!;
-            var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id);
-            existUser.AboutNew = ""; // Onay istenmasi için burada yeni hakkında yazısı olmalı
-            existUser.About = about; // Oay istenmesi için burayı kaldır
-            _context.Entry(existUser).State = EntityState.Modified;
-            await _context.SaveAsync(this);
-            return Ok(about);
-        }
+        // [HttpPost("updateAbout")]
+        // public async Task<ActionResult> UpdateAbout([FromBody] object data)
+        // {
+        //     string about = data.ToDynamic()!.about;
+        //     if (about.Length > 1000) about = about.Left(1000)!;
+        //     var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id);
+        //     existUser.AboutNew = ""; // Onay istenmasi için burada yeni hakkında yazısı olmalı
+        //     existUser.About = about; // Oay istenmesi için burayı kaldır
+        //     _context.Entry(existUser).State = EntityState.Modified;
+        //     await _context.SaveAsync(this);
+        //     return Ok(about);
+        // }
 
-        [HttpGet("changePassword/{lastPassword}/{newPassword}")]
-        public async Task<ActionResult> ChangePassword(string lastPassword, string newPassword)
-        {
-            var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
-            if (existUser.Password != lastPassword) return Problem("Şifre hatalı! Şifrenizi kontrol edip tekrar deneyin!");
-            existUser.Password = newPassword;
-            _context.Entry(existUser).State = EntityState.Modified;
-            await _context.SaveAsync(this);
-            return Ok("Şifre güncellendi!");
-        }
+        // [HttpGet("changePassword/{lastPassword}/{newPassword}")]
+        // public async Task<ActionResult> ChangePassword(string lastPassword, string newPassword)
+        // {
+        //     var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
+        //     if (existUser.Password != lastPassword) return Problem("Şifre hatalı! Şifrenizi kontrol edip tekrar deneyin!");
+        //     existUser.Password = newPassword;
+        //     _context.Entry(existUser).State = EntityState.Modified;
+        //     await _context.SaveAsync(this);
+        //     return Ok("Şifre güncellendi!");
+        // }
 
-        [HttpGet("changeAcceptCitizenStatus/{status}")]
-        public async Task<ActionResult<bool>> ChangeAcceptCitizenStatus( bool status)
-        {
-            var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id);
-            existUser.AcceptCitizen = status;
-            await _context.SaveAsync(this);
-            return existUser.AcceptCitizen;
-        }
+        // [HttpGet("changeAcceptCitizenStatus/{status}")]
+        // public async Task<ActionResult<bool>> ChangeAcceptCitizenStatus( bool status)
+        // {
+        //     var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id);
+        //     existUser.AcceptCitizen = status;
+        //     await _context.SaveAsync(this);
+        //     return existUser.AcceptCitizen;
+        // }
 
-        [AllowAnonymous]
-        [HttpGet("checkCode/{userId}/{method}/{code}")]
-        public async Task<ActionResult<string>> CheckCode(int userId, int method, int code)
-        {
-            //var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == userId);
+        // [AllowAnonymous]
+        // [HttpGet("checkCode/{userId}/{method}/{code}")]
+        // public async Task<ActionResult<string>> CheckCode(int userId, int method, int code)
+        // {
+        //     //var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == userId);
 
-            switch (method)
-            {
-                case 0:
-                    if (existUser.SmsCode != code) return Problem("Doğrulama kodu hatalı!");
-                    if (existUser.SmsEndTime == null) return Problem("Doğrulama tarihi hatası!");
-                    if (existUser.SmsEndTime < DateTimeOffset.Now) return Problem("Doğrulama süresi geçti, tekrar deneyiniz!");
-                    existUser.SmsCode = 0;
-                    existUser.SmsEndTime = null;
-                    await _context.SaveChangesAsync();
-                    return existUser.Token!;
+        //     switch (method)
+        //     {
+        //         case 0:
+        //             if (existUser.SmsCode != code) return Problem("Doğrulama kodu hatalı!");
+        //             if (existUser.SmsEndTime == null) return Problem("Doğrulama tarihi hatası!");
+        //             if (existUser.SmsEndTime < DateTimeOffset.UtcNow) return Problem("Doğrulama süresi geçti, tekrar deneyiniz!");
+        //             existUser.SmsCode = 0;
+        //             existUser.SmsEndTime = null;
+        //             await _context.SaveChangesAsync();
+        //             return existUser.Token!;
 
-                case 1:
-                    if (existUser.EMailCode != code) return Problem("Doğrulama kodu hatalı!");
-                    if (existUser.EMailEndTime == null) return Problem("Doğrulama tarihi hatası!");
-                    if (existUser.EMailEndTime < DateTimeOffset.Now) return Problem("Doğrulama süresi geçti, tekrar deneyiniz!");
-                    existUser.EMailCode = 0;
-                    existUser.EMailEndTime = null;
-                    await _context.SaveChangesAsync();
-                    return existUser.Token!;
-            }
+        //         case 1:
+        //             if (existUser.EMailCode != code) return Problem("Doğrulama kodu hatalı!");
+        //             if (existUser.EMailEndTime == null) return Problem("Doğrulama tarihi hatası!");
+        //             if (existUser.EMailEndTime < DateTimeOffset.UtcNow) return Problem("Doğrulama süresi geçti, tekrar deneyiniz!");
+        //             existUser.EMailCode = 0;
+        //             existUser.EMailEndTime = null;
+        //             await _context.SaveChangesAsync();
+        //             return existUser.Token!;
+        //     }
 
-            return Problem("Kod gönderim tipi hatalı!");
-        }
+        //     return Problem("Kod gönderim tipi hatalı!");
+        // }
 
-        [HttpGet("changePhoneNumber/{password}/{newPhoneNumber}")]
-        public async Task<ActionResult> ChangePhoneNumber(string password, string newPhoneNumber)
-        {
-            var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
-            if (existUser == null) return Problem("Kullanıcı bulunamadı!");
+        // [HttpGet("changePhoneNumber/{password}/{newPhoneNumber}")]
+        // public async Task<ActionResult> ChangePhoneNumber(string password, string newPhoneNumber)
+        // {
+        //     var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
+        //     if (existUser == null) return Problem("Kullanıcı bulunamadı!");
 
-            if (existUser.Password != password)
-                return Problem("Şifre hatalı! Şifrenizi kontrol edip tekrar deneyin!");
+        //     if (existUser.Password != password)
+        //         return Problem("Şifre hatalı! Şifrenizi kontrol edip tekrar deneyin!");
 
-            if (existUser.SmsEndTime != null && existUser.SmsEndTime > DateTimeOffset.Now)
-                return Ok($"Şifre daha önce gönderilmiş! Daha önce girilen şifreyi girin veya {Settings.SmsExpirationMinute}dk bekleyin.");
+        //     if (existUser.SmsEndTime != null && existUser.SmsEndTime > DateTimeOffset.Now)
+        //         return Ok($"Şifre daha önce gönderilmiş! Daha önce girilen şifreyi girin veya {Settings.SmsExpirationMinute}dk bekleyin.");
 
-            if (await _context.Users.Where(u => u.Phone == newPhoneNumber).CountAsync() > 0)
-                return Problem("Telefon numarası zaten kullanılıyor!");
+        //     if (await _context.Users.Where(u => u.Phone == newPhoneNumber).CountAsync() > 0)
+        //         return Problem("Telefon numarası zaten kullanılıyor!");
 
-            existUser.SmsCode = new Random().Next(10000, 100000);
-            existUser.SmsEndTime = DateTimeOffset.Now.AddMinutes(Settings.SmsExpirationMinute);
-            _context.Entry(existUser).State = EntityState.Modified;
-            await _context.SaveAsync(this);
+        //     existUser.SmsCode = new Random().Next(10000, 100000);
+        //     existUser.SmsEndTime = DateTimeOffset.Now.AddMinutes(Settings.SmsExpirationMinute);
+        //     _context.Entry(existUser).State = EntityState.Modified;
+        //     await _context.SaveAsync(this);
 
-            return Ok("Cep telefonunuza doğrulama kodu gönderildi!");
-        }
+        //     return Ok("Cep telefonunuza doğrulama kodu gönderildi!");
+        // }
 
-        [HttpGet("changePhoneNumberComplate/{password}/{newPhoneNumber}/{code}")]
-        public async Task<ActionResult> ChangePhoneNumberComplate(string password, string newPhoneNumber, int code)
-        {
-            var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
-            if (existUser == null) return Problem("Kullanıcı bulunamadı!");
+        // [HttpGet("changePhoneNumberComplate/{password}/{newPhoneNumber}/{code}")]
+        // public async Task<ActionResult> ChangePhoneNumberComplate(string password, string newPhoneNumber, int code)
+        // {
+        //     var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
+        //     if (existUser == null) return Problem("Kullanıcı bulunamadı!");
 
-            if (existUser.Password != password)
-                return Problem("Şifre hatalı! Şifrenizi kontrol edip tekrar deneyin!");
+        //     if (existUser.Password != password)
+        //         return Problem("Şifre hatalı! Şifrenizi kontrol edip tekrar deneyin!");
 
-            if (existUser.SmsCode != code || existUser.SmsEndTime == null || existUser.SmsEndTime.Value < DateTimeOffset.Now)
-                return Problem("Doğrulama kodu hatalı veya kullanım süresi dolmuş!");
+        //     if (existUser.SmsCode != code || existUser.SmsEndTime == null || existUser.SmsEndTime.Value < DateTimeOffset.Now)
+        //         return Problem("Doğrulama kodu hatalı veya kullanım süresi dolmuş!");
 
-            if (await _context.Users.Where(u => u.Phone == newPhoneNumber).CountAsync() > 0)
-                return Problem("Telefon numarası zaten kullanılıyor!");
+        //     if (await _context.Users.Where(u => u.Phone == newPhoneNumber).CountAsync() > 0)
+        //         return Problem("Telefon numarası zaten kullanılıyor!");
 
-            existUser.SmsCode = 0;
-            existUser.SmsEndTime = null;
-            existUser.Phone = newPhoneNumber;
-            _context.Entry(existUser).State = EntityState.Modified;
-            await _context.SaveAsync(this);
+        //     existUser.SmsCode = 0;
+        //     existUser.SmsEndTime = null;
+        //     existUser.Phone = newPhoneNumber;
+        //     _context.Entry(existUser).State = EntityState.Modified;
+        //     await _context.SaveAsync(this);
 
-            return Ok("Telefon numarası güncellendi");
-        }
+        //     return Ok("Telefon numarası güncellendi");
+        // }
 
-        // EPosta güncelleme
+        // // EPosta güncelleme
 
-        [HttpGet("changeEMail/{password}/{newEMail}")]
-        public async Task<ActionResult> ChangeEmail(string password, string newEMail)
-        {
-            var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
-            if (existUser == null) return Problem("Kullanıcı bulunamadı!");
+        // [HttpGet("changeEMail/{password}/{newEMail}")]
+        // public async Task<ActionResult> ChangeEmail(string password, string newEMail)
+        // {
+        //     var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
+        //     if (existUser == null) return Problem("Kullanıcı bulunamadı!");
 
-            if (existUser.Password != password)
-                return Problem("Doğrulama kodu hatalı! Kodu kontrol edip tekrar deneyin!");
+        //     if (existUser.Password != password)
+        //         return Problem("Doğrulama kodu hatalı! Kodu kontrol edip tekrar deneyin!");
 
-            if (await _context.Users.Where(u => u.Email == newEMail).CountAsync() > 0)
-                return Problem("E-Posta adresi zaten kullanılıyor!");
+        //     if (await _context.Users.Where(u => u.Email == newEMail).CountAsync() > 0)
+        //         return Problem("E-Posta adresi zaten kullanılıyor!");
 
-            existUser.EMailCode = new Random().Next(10000, 100000);
-            existUser.EMailEndTime = DateTimeOffset.Now.AddMinutes(Settings.EMailExpirationMinute);
-            _context.Entry(existUser).State = EntityState.Modified;
-            await _context.SaveAsync(this);
+        //     existUser.EMailCode = new Random().Next(10000, 100000);
+        //     existUser.EMailEndTime = DateTimeOffset.Now.AddMinutes(Settings.EMailExpirationMinute);
+        //     _context.Entry(existUser).State = EntityState.Modified;
+        //     await _context.SaveAsync(this);
 
-            return Ok("Doğrulama kodu E-Posta adresinize gönderildi!");
-        }
+        //     return Ok("Doğrulama kodu E-Posta adresinize gönderildi!");
+        // }
 
-        [HttpGet("changeEMailComplate/{password}/{newEMail}/{code}")]
-        public async Task<ActionResult> ChangeEMailComplate(string password, string newEMail, int code)
-        {
-            var user = this.GetUser();
-            var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
-            if (existUser == null) return Problem("Kullanıcı bulunamadı!");
+        // [HttpGet("changeEMailComplate/{password}/{newEMail}/{code}")]
+        // public async Task<ActionResult> ChangeEMailComplate(string password, string newEMail, int code)
+        // {
+        //     var user = this.GetUser();
+        //     var existUser = await _context.Users.FirstAsync(u => u.Id == user.Id && !u.IsDeleted);
+        //     if (existUser == null) return Problem("Kullanıcı bulunamadı!");
 
-            if (existUser.Password != password)
-                return Problem("Doğrulama kodu hatalı! Kodu kontrol edip tekrar deneyin!");
+        //     if (existUser.Password != password)
+        //         return Problem("Doğrulama kodu hatalı! Kodu kontrol edip tekrar deneyin!");
 
-            if (existUser.EMailCode != code || existUser.EMailEndTime == null || existUser.EMailEndTime.Value < DateTimeOffset.Now)
-                return Problem("Doğrulama kodu hatalı veya kullanım süresi dolmuş!");
+        //     if (existUser.EMailCode != code || existUser.EMailEndTime == null || existUser.EMailEndTime.Value < DateTimeOffset.Now)
+        //         return Problem("Doğrulama kodu hatalı veya kullanım süresi dolmuş!");
 
-            if (await _context.Users.Where(u => u.Email == newEMail).CountAsync() > 0)
-                return Problem("E-Posta numarası zaten kullanılıyor!");
+        //     if (await _context.Users.Where(u => u.Email == newEMail).CountAsync() > 0)
+        //         return Problem("E-Posta numarası zaten kullanılıyor!");
 
-            existUser.EMailCode = 0;
-            existUser.EMailEndTime = null;
-            existUser.Email = newEMail;
-            _context.Entry(existUser).State = EntityState.Modified;
-            await _context.SaveAsync(this);
+        //     existUser.EMailCode = 0;
+        //     existUser.EMailEndTime = null;
+        //     existUser.Email = newEMail;
+        //     _context.Entry(existUser).State = EntityState.Modified;
+        //     await _context.SaveAsync(this);
 
-            return Ok("E-Posta adresi güncellendi");
-        }
+        //     return Ok("E-Posta adresi güncellendi");
+        // }
 
-        [AllowAnonymous]
-        [HttpPost("checkUserWithSave")]
-        public async Task<ActionResult> CheckUserWithSave(User user)
-        {
-            var existUser = await _context.Users.FirstOrDefaultAsync(u => (u.Email.ToLower() == user.Email.ToLower() || u.Phone == user.Phone) && !u.IsDeleted);
-            if (existUser != null) return Problem("E-Posta Adresi veya Telefon Numarası kullanılıyor, giriş yapmayı deneyin!");
-            var SmsCode = new Random().Next(10000, 100000);
-            SendSMS.SendOTPCode(user.Id, user.Phone, SmsCode, user.Signature);
-            return Ok(SmsCode);
-        }
+        // [AllowAnonymous]
+        // [HttpPost("checkUserWithSave")]
+        // public async Task<ActionResult> CheckUserWithSave(User user)
+        // {
+        //     var existUser = await _context.Users.FirstOrDefaultAsync(u => (u.Email.ToLower() == user.Email.ToLower() || u.Phone == user.Phone) && !u.IsDeleted);
+        //     if (existUser != null) return Problem("E-Posta Adresi veya Telefon Numarası kullanılıyor, giriş yapmayı deneyin!");
+        //     var SmsCode = new Random().Next(10000, 100000);
+        //     SendSMS.SendOTPCode(user.Id, user.Phone, SmsCode, user.Signature);
+        //     return Ok(SmsCode);
+        // }
 
         [HttpPost("updatePushNotificationToken")]
         public async Task<ActionResult> UpdatePushNotificationToken([FromBody] string token)

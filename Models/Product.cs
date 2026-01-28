@@ -59,7 +59,7 @@ public class BaseProduct : ModelBase
     /// <summary>
     /// Birim
     /// </summary>
-    [ForeignKey("UnitId")] 
+    [ForeignKey("UnitId")]
     public int? UnitId { get; set; }
 
     /// <summary>
@@ -157,7 +157,7 @@ public class BaseProduct : ModelBase
     [NotMapped]
     public byte[]? ImageData { get; set; }
 
-    public new DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public new DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 
     [JsonIgnore]
     public bool IsDeleted { get; set; }

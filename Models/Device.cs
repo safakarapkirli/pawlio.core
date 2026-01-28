@@ -13,7 +13,7 @@ public class Device : BaseDevice
     public string Id { get; set; } = Guid.NewGuid().ToString();
 
     [JsonIgnore]
-    public new DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public new DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 }
 
 public class BaseDevice : ModelBase

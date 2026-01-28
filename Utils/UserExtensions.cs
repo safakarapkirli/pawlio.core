@@ -51,7 +51,7 @@ public class TokenUser
     public int PosId { get; set; }
     public bool IsPos { get => PosId > 0; }
     public string DeviceId { get; set; }
-
+    public string Language { get; set; }
     public User User { get; set; }
 
     public bool isVeterinary
@@ -59,7 +59,10 @@ public class TokenUser
         get => Flavor == Flavor.Pawlio; //FirmType == FirmTypes.Veterinary;
     }
 
-    public TokenUser(Flavor flavor, int id, string sessionId, int firmId, int branchId, User user, int posId, string deviceId)
+    public bool isEn => Language == "en";
+    public bool isTr => Language == "tr";
+
+    public TokenUser(Flavor flavor, int id, string sessionId, int firmId, int branchId, User user, int posId, string deviceId, string language)
     {
         Flavor = flavor;
         Id = id;
@@ -69,5 +72,6 @@ public class TokenUser
         User = user;
         PosId = posId;
         DeviceId = deviceId;
+        Language = language;
     }
 }

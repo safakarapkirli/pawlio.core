@@ -21,7 +21,7 @@ public class BaseAnimalWeight : ModelBase
     [ForeignKey("AnimalId")]
     public int AnimalId { get; set; }
 
-    public DateTimeOffset Date { get; set; } = DateTimeOffset.Now;
+    public DateTimeOffset Date { get; set; } = DateTimeOffset.UtcNow;
 
     [MaxLength(200)]
     public string Notes { get; set; } = "";

@@ -82,7 +82,7 @@ public class BaseCustomer : ModelBase
     [NotMapped]
     public byte[]? ImageData { get; set; }
 
-    public new DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public new DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 
     [JsonIgnore]
     public bool IsDeleted { get; set; }

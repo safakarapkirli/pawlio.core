@@ -39,5 +39,25 @@ namespace Pawlio.Controllers
 
             return sql;
         }
+
+        [HttpGet("history")]
+        public string History()
+        {
+            var path = Path.GetFullPath("AppData");
+            string jsonFilePath = path + "/postgredql_history.sql";
+            var sql = System.IO.File.ReadAllText(jsonFilePath);
+
+            try
+            {
+                _context.Database.ExecuteSqlRaw(sql);
+                sql = "/* OK */" + sql;
+            }
+            catch (Exception e)
+            {
+                sql = "/* ERRROR: " + e.Message + "*/" + sql;
+            }
+
+            return sql;
+        }
     }
 }

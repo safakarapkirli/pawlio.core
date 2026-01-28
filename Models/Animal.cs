@@ -64,7 +64,7 @@ public class BaseAnimal : ModelBase
 
     //[Precision(7, 2)]
     //public decimal Weight { get; set; } = 0;
-    
+
     /// <summary>
     /// Saldırgan mı?
     /// </summary>
@@ -96,7 +96,7 @@ public class BaseAnimal : ModelBase
     [NotMapped]
     public byte[]? ImageData { get; set; }
 
-    public new DateTimeOffset Created { get; set; } = DateTimeOffset.Now;
+    public new DateTimeOffset Created { get; set; } = DateTimeOffset.UtcNow;
 
     [JsonIgnore]
     public bool IsDeleted { get; set; }

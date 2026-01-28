@@ -9,7 +9,11 @@ namespace Pawlio.Controllers
     [ApiController]
     public class AIController : ApiController
     {
-        public AIController(PostgreSqlDbContext context, IHubContext<MainHub> mainHub) : base(context, mainHub) { }
+        private readonly IConfiguration _configuration;
+        public AIController(PostgreSqlDbContext context, IHubContext<MainHub> mainHub, IConfiguration configuration) : base(context, mainHub)
+        {
+            _configuration = configuration;
+        }
 
         [HttpGet]
         public async Task<string> Test()
@@ -23,7 +27,7 @@ namespace Pawlio.Controllers
             string query = data.query;
 
             var kernel = Kernel.CreateBuilder()
-                .AddOpenAIChatCompletion("gpt-3.5-turbo", "YOUR_OPENAI_API_KEY")
+                .AddOpenAIChatCompletion(_configuration["OpenAI:Model"] ?? "gpt-3.5-turbo", _configuration["OpenAI:ApiKey"]!)
                 .Build();
 
             var path = Path.GetFullPath("AppData");

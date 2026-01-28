@@ -1,0 +1,1567 @@
+[
+  {
+    "id": 1,
+    "type": "Köpek",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Karma Aşı (DHPPi/L)",
+          "en": "Combination Vaccine (DHPPi/L)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 3,
+        "interval_days": 21,
+        "note": {
+          "tr": "6-8 haftalıkken başlanır, 3 doz yapılır (21 gün arayla), sonra yıllık tekrar. Distemper, Hepatit, Parvovirus, Parainfluenza, Leptospira içerir",
+          "en": "Starts at 6-8 weeks, 3 doses (21 days apart), then annual booster. Includes Distemper, Hepatitis, Parvovirus, Parainfluenza, Leptospira"
+        }
+      },
+      {
+        "name": {
+          "tr": "Kuduz Aşısı",
+          "en": "Rabies Vaccine"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "12-16 haftalıkken yapılır, yıllık tekrar gerekir. Zorunlu aşıdır",
+          "en": "Given at 12-16 weeks, annual booster required. Mandatory vaccine"
+        }
+      },
+      {
+        "name": {
+          "tr": "Bordetella (Köpek Öksürüğü)",
+          "en": "Bordetella (Kennel Cough)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "6-8 haftalıkken başlanabilir. Özellikle pansiyonlara, kreşlere giden, sosyal ortamlarda bulunan köpekler için önerilir. İntranazal veya enjekte edilebilir",
+          "en": "Can start at 6-8 weeks. Recommended especially for dogs in kennels, daycare, social environments. Intranasal or injectable"
+        }
+      },
+      {
+        "name": {
+          "tr": "Leptospiroz",
+          "en": "Leptospirosis"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "12 haftalıkken başlanır, 2 doz (21 gün arayla), yıllık tekrar. Sulak alanlarda yaşayan köpekler için önemli. Genellikle karma aşının içinde bulunur",
+          "en": "Starts at 12 weeks, 2 doses (21 days apart), annual booster. Important for dogs in wetland areas. Usually included in combination vaccine"
+        }
+      },
+      {
+        "name": {
+          "tr": "Parainfluenza",
+          "en": "Parainfluenza"
+        },
+        "repeat_days": 365,
+        "initial_doses": 3,
+        "interval_days": 21,
+        "note": {
+          "tr": "Genellikle karma aşının içinde bulunur. Solunum yolu enfeksiyonlarından korur",
+          "en": "Usually included in combination vaccine. Protects against respiratory infections"
+        }
+      },
+      {
+        "name": {
+          "tr": "Coronavirus",
+          "en": "Coronavirus"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "İsteğe bağlı aşı. Yavru köpeklerde ishal yapabilir. Çok yavru olan ortamlarda önerilir",
+          "en": "Optional vaccine. Can cause diarrhea in puppies. Recommended in environments with many puppies"
+        }
+      },
+      {
+        "name": {
+          "tr": "Lyme Hastalığı",
+          "en": "Lyme Disease"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Kene endemic bölgelerde önerilir. 12 haftalıkken başlanır, 2 doz, yıllık tekrar",
+          "en": "Recommended in tick-endemic areas. Starts at 12 weeks, 2 doses, annual booster"
+        }
+      },
+      {
+        "name": {
+          "tr": "Influenza (Köpek Gribi)",
+          "en": "Canine Influenza"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Risk altındaki köpekler için (pansiyonlar, köpek parkları). 6-8 haftalıkken başlanır, 2 doz",
+          "en": "For at-risk dogs (kennels, dog parks). Starts at 6-8 weeks, 2 doses"
+        }
+      },
+      {
+        "name": {
+          "tr": "Giardia",
+          "en": "Giardia"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "İsteğe bağlı. Kontamine su kaynaklarına maruz kalan köpekler için",
+          "en": "Optional. For dogs exposed to contaminated water sources"
+        }
+      },
+      {
+        "name": {
+          "tr": "Crotalus Atrox (Çıngıraklı Yılan)",
+          "en": "Crotalus Atrox (Rattlesnake)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 30,
+        "note": {
+          "tr": "Çıngıraklı yılanların yaşadığı bölgelerde önerilir. Yılan ısırığına karşı koruma sağlar",
+          "en": "Recommended in rattlesnake habitats. Provides protection against snake bites"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "Kedi",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Üçlü Aşı (FVRCP)",
+          "en": "Triple Vaccine (FVRCP)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 3,
+        "interval_days": 21,
+        "note": {
+          "tr": "6-8 haftalıkken başlanır, 3 doz yapılır (21 gün arayla), sonra yıllık tekrar. Feline Viral Rhinotracheitis, Calicivirus, Panleukopenia içerir. Temel aşıdır",
+          "en": "Starts at 6-8 weeks, 3 doses (21 days apart), then annual booster. Includes Feline Viral Rhinotracheitis, Calicivirus, Panleukopenia. Core vaccine"
+        }
+      },
+      {
+        "name": {
+          "tr": "Kuduz Aşısı",
+          "en": "Rabies Vaccine"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "12-16 haftalıkken yapılır, yıllık tekrar gerekir. Dışarı çıkan kediler için zorunludur",
+          "en": "Given at 12-16 weeks, annual booster required. Mandatory for outdoor cats"
+        }
+      },
+      {
+        "name": {
+          "tr": "Feline Lösemi (FeLV)",
+          "en": "Feline Leukemia (FeLV)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "8-12 haftalıkken başlanır, ilk yıl 2 doz (21 gün arayla), dışarı çıkan veya çok kedili evlerde yaşayan kediler için önerilir. Aşıdan önce FeLV testi yapılmalı",
+          "en": "Starts at 8-12 weeks, 2 doses in first year (21 days apart), recommended for outdoor cats or multi-cat households. FeLV test should be done before vaccination"
+        }
+      },
+      {
+        "name": {
+          "tr": "Feline İmmün Yetmezlik Virüsü (FIV)",
+          "en": "Feline Immunodeficiency Virus (FIV)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 3,
+        "interval_days": 21,
+        "note": {
+          "tr": "8 haftalıkken başlanır, 3 doz (21 gün arayla). Dışarı çıkan, kavgaya meyilli erkek kediler için önerilir. Aşı test sonuçlarını etkileyebilir",
+          "en": "Starts at 8 weeks, 3 doses (21 days apart). Recommended for outdoor, fight-prone male cats. Vaccine may affect test results"
+        }
+      },
+      {
+        "name": {
+          "tr": "Chlamydia (Chlamydophila felis)",
+          "en": "Chlamydia (Chlamydophila felis)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Çok kedili ortamlarda, göz enfeksiyonu riski yüksek olan kediler için. Bazen FVRCP aşısına dahil edilir (FVRCP-C)",
+          "en": "For multi-cat environments, cats at high risk of eye infections. Sometimes included in FVRCP vaccine (FVRCP-C)"
+        }
+      },
+      {
+        "name": {
+          "tr": "Bordetella",
+          "en": "Bordetella"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Pansiyonlara giden, barınaklardaki kediler için. İsteğe bağlı, intranazal uygulanır",
+          "en": "For cats in kennels, shelters. Optional, administered intranasally"
+        }
+      },
+      {
+        "name": {
+          "tr": "Feline Enfeksiyöz Peritonit (FIP)",
+          "en": "Feline Infectious Peritonitis (FIP)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "16 haftalıkken başlanır, 2 doz (21 gün arayla). Tartışmalı etkinlik, genelde önerilmez. Yüksek riskli ortamlar için düşünülebilir",
+          "en": "Starts at 16 weeks, 2 doses (21 days apart). Controversial efficacy, generally not recommended. May be considered for high-risk environments"
+        }
+      },
+      {
+        "name": {
+          "tr": "Dermatophytosis (Mantar - Microsporum canis)",
+          "en": "Dermatophytosis (Ringworm - Microsporum canis)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 14,
+        "note": {
+          "tr": "Mantar enfeksiyonlarının yaygın olduğu çiftliklerde, barınaklarda kullanılır. İsteğe bağlı, tedavi amaçlı da kullanılabilir",
+          "en": "Used in farms, shelters where fungal infections are common. Optional, can also be used therapeutically"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "Kuş",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Newcastle Hastalığı",
+          "en": "Newcastle Disease"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 14,
+        "note": {
+          "tr": "1-7 günlükken başlanır, yaşa göre farklı suşlar kullanılır (LaSota, B1, VG/GA). Özellikle tavuk, hindi gibi kanatlılar için zorunlu. Damla veya içme suyu ile",
+          "en": "Starts at 1-7 days, different strains used by age (LaSota, B1, VG/GA). Mandatory especially for poultry like chickens, turkeys. Eye drop or drinking water"
+        }
+      },
+      {
+        "name": {
+          "tr": "Infectious Bursal Disease (Gumboro)",
+          "en": "Infectious Bursal Disease (Gumboro)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 14,
+        "note": {
+          "tr": "10-14 günlükken başlanır, kanatlı çiftliklerinde yaygın. Bağışıklık sistemini etkiler",
+          "en": "Starts at 10-14 days, common in poultry farms. Affects immune system"
+        }
+      },
+      {
+        "name": {
+          "tr": "Marek Hastalığı",
+          "en": "Marek's Disease"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Civciv 1 günlükken yapılır, tekrar gerektirmez. Tumör oluşumunu önler. In-ovo (yumurtada) veya kuluçkadan çıktıktan hemen sonra",
+          "en": "Given at 1 day old, no booster needed. Prevents tumor formation. In-ovo or immediately after hatching"
+        }
+      },
+      {
+        "name": {
+          "tr": "Infectious Bronchitis (IB)",
+          "en": "Infectious Bronchitis (IB)"
+        },
+        "repeat_days": 90,
+        "initial_doses": 2,
+        "interval_days": 14,
+        "note": {
+          "tr": "1-7 günlükken başlanır, farklı serotipleri içerebilir (Mass, 4/91, vb.). Solunum yolu ve yumurta kalitesini etkiler",
+          "en": "Starts at 1-7 days, may include different serotypes (Mass, 4/91, etc.). Affects respiratory system and egg quality"
+        }
+      },
+      {
+        "name": {
+          "tr": "Avian Encephalomyelitis (AE)",
+          "en": "Avian Encephalomyelitis (AE)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "10-16 haftalıkken damızlık tavuklara yapılır. Yavru ölümlerini önler",
+          "en": "Given to breeding hens at 10-16 weeks. Prevents chick mortality"
+        }
+      },
+      {
+        "name": {
+          "tr": "Egg Drop Syndrome (EDS)",
+          "en": "Egg Drop Syndrome (EDS)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "14-16 haftalıkken yumurtacı tavuklara yapılır. Yumurta üretim düşüşünü önler",
+          "en": "Given to layer hens at 14-16 weeks. Prevents drop in egg production"
+        }
+      },
+      {
+        "name": {
+          "tr": "Fowl Pox (Tavuk Çiçeği)",
+          "en": "Fowl Pox"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "6-10 haftalıkken kanat altına uygulanır. Wing-web metodu kullanılır",
+          "en": "Applied under wing at 6-10 weeks. Wing-web method used"
+        }
+      },
+      {
+        "name": {
+          "tr": "Infectious Coryza",
+          "en": "Infectious Coryza"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "6-10 haftalıkken başlanır, solunum yolu enfeksiyonlarına karşı korur",
+          "en": "Starts at 6-10 weeks, protects against respiratory infections"
+        }
+      },
+      {
+        "name": {
+          "tr": "Mycoplasma (MG/MS)",
+          "en": "Mycoplasma (MG/MS)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 1,
+        "note": {
+          "tr": "4-10 haftalıkken. Kronik solunum yolu hastalığına karşı, özellikle damızlık sürülerde",
+          "en": "At 4-10 weeks. Against chronic respiratory disease, especially in breeding flocks"
+        }
+      },
+      {
+        "name": {
+          "tr": "Polyomavirus (Papağanlar)",
+          "en": "Polyomavirus (Parrots)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "6 haftalıkken başlanır, genç papağanlar için önemli. 2 doz (21 gün arayla), sonra yıllık",
+          "en": "Starts at 6 weeks, important for young parrots. 2 doses (21 days apart), then annual"
+        }
+      },
+      {
+        "name": {
+          "tr": "Pacheco's Disease (Papağanlar)",
+          "en": "Pacheco's Disease (Parrots)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Herpesvirus'e karşı, yüksek riskli papağan popülasyonlarında kullanılır",
+          "en": "Against Herpesvirus, used in high-risk parrot populations"
+        }
+      },
+      {
+        "name": {
+          "tr": "Papağan Gagası ve Tüy Hastalığı (PBFD)",
+          "en": "Psittacine Beak and Feather Disease (PBFD)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Avustralya'da mevcut, diğer ülkelerde sınırlı erişim. Önce test yapılmalı, pozitif kuşlara aşı yapılmaz",
+          "en": "Available in Australia, limited access in other countries. Test first, do not vaccinate positive birds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "Tavşan",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Myksomatoz (Tavşan Vebası)",
+          "en": "Myxomatosis"
+        },
+        "repeat_days": 180,
+        "initial_doses": 1,
+        "note": {
+          "tr": "5-6 haftalıkken başlanır, 6 ayda bir tekrar. Sivrisinek ve pirelerle bulaşır. Dışarıda yaşayan tavşanlar için kritik",
+          "en": "Starts at 5-6 weeks, repeat every 6 months. Transmitted by mosquitoes and fleas. Critical for outdoor rabbits"
+        }
+      },
+      {
+        "name": {
+          "tr": "RHD (Rabbit Hemorrhagic Disease) - RHD1",
+          "en": "RHD (Rabbit Hemorrhagic Disease) - RHD1"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "5-6 haftalıkken başlanır, yıllık tekrar. Ölümcül viral hastalık",
+          "en": "Starts at 5-6 weeks, annual booster. Fatal viral disease"
+        }
+      },
+      {
+        "name": {
+          "tr": "RHD2 (RVHD2 / VHD2)",
+          "en": "RHD2 (RVHD2 / VHD2)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "5-6 haftalıkken başlanır, yıllık tekrar. RHD1'den farklı suş, kombine aşılar mevcut. Tüm tavşanlar için önerilir",
+          "en": "Starts at 5-6 weeks, annual booster. Different strain from RHD1, combined vaccines available. Recommended for all rabbits"
+        }
+      },
+      {
+        "name": {
+          "tr": "RHD1 + RHD2 Kombine Aşı",
+          "en": "RHD1 + RHD2 Combined Vaccine"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "5-6 haftalıkken, her iki RHD tipine karşı koruma. Tek enjeksiyonda her ikisi. Tercih edilen yöntem",
+          "en": "At 5-6 weeks, protection against both RHD types. Both in single injection. Preferred method"
+        }
+      },
+      {
+        "name": {
+          "tr": "Pasteurelloz (Snuffles)",
+          "en": "Pasteurellosis (Snuffles)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "4-5 haftalıkken başlanır, 2 doz (21 gün arayla). Solunum yolu enfeksiyonları için. Etkinlik tartışmalı, yüksek riskli ortamlarda önerilir",
+          "en": "Starts at 4-5 weeks, 2 doses (21 days apart). For respiratory infections. Controversial efficacy, recommended in high-risk environments"
+        }
+      },
+      {
+        "name": {
+          "tr": "Clostridium",
+          "en": "Clostridium"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "İsteğe bağlı, enterotoksemi riski yüksek çiftliklerde kullanılır",
+          "en": "Optional, used in farms with high enterotoxemia risk"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "Kaplumbağa",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Herpesvirus (Deniz Kaplumbağaları)",
+          "en": "Herpesvirus (Sea Turtles)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Deniz kaplumbağaları için, araştırma aşamasında. Evcil kaplumbağalar için standart aşılama protokolü yoktur",
+          "en": "For sea turtles, in research phase. No standard vaccination protocol for pet turtles"
+        }
+      },
+      {
+        "name": {
+          "tr": "Ranavirus",
+          "en": "Ranavirus"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Araştırma aşamasında, henüz ticari olarak mevcut değil. Özellikle kaplumbağa popülasyonlarında viral hastalıklara karşı",
+          "en": "In research phase, not yet commercially available. Against viral diseases in turtle populations"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "İnek",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Şap Hastalığı (FMD)",
+          "en": "Foot and Mouth Disease (FMD)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 1,
+        "note": {
+          "tr": "2 aylıkken başlanır, 6 ayda bir tekrar. Zorunlu aşı, tüm sığırlara uygulanır. Serotipe göre farklı aşılar kullanılır (O, A, Asia1)",
+          "en": "Starts at 2 months, repeat every 6 months. Mandatory vaccine, applied to all cattle. Different vaccines used by serotype (O, A, Asia1)"
+        }
+      },
+      {
+        "name": {
+          "tr": "Şarbon (Anthrax)",
+          "en": "Anthrax"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "3 aylıkken başlanır, yıllık tekrar. Endemik bölgelerde zorunlu. Sporlar toprakta yıllarca yaşayabilir",
+          "en": "Starts at 3 months, annual booster. Mandatory in endemic areas. Spores can survive in soil for years"
+        }
+      },
+      {
+        "name": {
+          "tr": "Brucelloz (Bang Hastalığı)",
+          "en": "Brucellosis (Bang's Disease)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "4-12 aylık düvelere RB51 veya S19 aşısı uygulanır. Tekrar yapılmaz. Gebe hayvanlara yapılmaz. Zorunlu aşılama programlarına tabidir",
+          "en": "RB51 or S19 vaccine applied to 4-12 month old heifers. No booster. Not for pregnant animals. Subject to mandatory vaccination programs"
+        }
+      },
+      {
+        "name": {
+          "tr": "IBR (Infectious Bovine Rhinotracheitis)",
+          "en": "IBR (Infectious Bovine Rhinotracheitis)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "3-6 aylıkken başlanır, 2 doz (21 gün arayla), sonra yıllık. Solunum yolu, üreme problemleri. Canlı veya inaktif aşı seçenekleri",
+          "en": "Starts at 3-6 months, 2 doses (21 days apart), then annual. Respiratory, reproductive problems. Live or inactivated vaccine options"
+        }
+      },
+      {
+        "name": {
+          "tr": "BVD (Bovine Viral Diarrhea)",
+          "en": "BVD (Bovine Viral Diarrhea)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "3-6 aylıkken başlanır, 2 doz (21 gün arayla), yıllık tekrar. İmmün yetmezlik, ishal, üreme sorunları. Aşıdan önce PI (Persistent Infection) testi önerilir",
+          "en": "Starts at 3-6 months, 2 doses (21 days apart), annual booster. Immunodeficiency, diarrhea, reproductive issues. PI test recommended before vaccination"
+        }
+      },
+      {
+        "name": {
+          "tr": "PI3 (Parainfluenza-3)",
+          "en": "PI3 (Parainfluenza-3)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Solunum yolu kompleksinin parçası, genellikle kombine aşılarda bulunur (IBR/BVD/PI3)",
+          "en": "Part of respiratory complex, usually found in combination vaccines (IBR/BVD/PI3)"
+        }
+      },
+      {
+        "name": {
+          "tr": "BRSV (Bovine Respiratory Syncytial Virus)",
+          "en": "BRSV (Bovine Respiratory Syncytial Virus)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "3-6 aylıkken başlanır, buzağılarda ciddi solunum problemleri yapar. Kombine solunum aşılarında bulunur",
+          "en": "Starts at 3-6 months, causes severe respiratory problems in calves. Found in combination respiratory vaccines"
+        }
+      },
+      {
+        "name": {
+          "tr": "Mannheimia haemolytica (Pasteurelloz)",
+          "en": "Mannheimia haemolytica (Pasteurellosis)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Bakteriyel pnömoni, 'shipping fever'. Stres, taşıma sonrası risk artar. 2-3 aylıkken başlanır, 2 doz, yıllık tekrar",
+          "en": "Bacterial pneumonia, 'shipping fever'. Risk increases after stress, transport. Starts at 2-3 months, 2 doses, annual booster"
+        }
+      },
+      {
+        "name": {
+          "tr": "Histophilus somni (ITEME)",
+          "en": "Histophilus somni (TEME)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Tromboembolik meningoensefalit, solunum ve üreme problemleri. Kombine aşılarda bulunur",
+          "en": "Thromboembolic meningoencephalitis, respiratory and reproductive problems. Found in combination vaccines"
+        }
+      },
+      {
+        "name": {
+          "tr": "Blackleg (Kara Ayak/Karabasan)",
+          "en": "Blackleg (Clostridium chauvoei)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "2-3 aylıkken başlanır, 2 doz (21 gün arayla), yıllık tekrar. Genellikle 7-yollu veya 8-yollu clostridial aşı olarak verilir",
+          "en": "Starts at 2-3 months, 2 doses (21 days apart), annual booster. Usually given as 7-way or 8-way clostridial vaccine"
+        }
+      },
+      {
+        "name": {
+          "tr": "Clostridial Hastalıklar (7-yollu veya 8-yollu)",
+          "en": "Clostridial Diseases (7-way or 8-way)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Blackleg, malignant edema, black disease, enterotoxemia içerir. 2-3 aylıkken 2 doz, yıllık tekrar",
+          "en": "Includes blackleg, malignant edema, black disease, enterotoxemia. 2 doses at 2-3 months, annual booster"
+        }
+      },
+      {
+        "name": {
+          "tr": "Rotavirus ve Coronavirus (Buzağı İshali)",
+          "en": "Rotavirus and Coronavirus (Calf Scours)"
+        },
+        "repeat_days": null,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Gebe ineklere doğumdan 60 ve 30 gün önce 2 doz yapılır. Kolostrumla buzağıya pasif bağışıklık geçer",
+          "en": "Given to pregnant cows 60 and 30 days before calving, 2 doses. Passive immunity passes to calf through colostrum"
+        }
+      },
+      {
+        "name": {
+          "tr": "E. coli (Buzağı İshali)",
+          "en": "E. coli (Calf Scours)"
+        },
+        "repeat_days": null,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Gebe ineklere doğumdan önce yapılır. K99 antijeni içerir. Kolostrumla buzağıya koruma sağlar",
+          "en": "Given to pregnant cows before calving. Contains K99 antigen. Provides protection to calf through colostrum"
+        }
+      },
+      {
+        "name": {
+          "tr": "Salmonelloz",
+          "en": "Salmonellosis"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Risk altındaki sürülerde kullanılır. İshal, septisemi. 6 ayda bir tekrar önerilir",
+          "en": "Used in at-risk herds. Diarrhea, septicemia. Repeat every 6 months recommended"
+        }
+      },
+      {
+        "name": {
+          "tr": "Campylobacter fetus (Vibriosis)",
+          "en": "Campylobacter fetus (Vibriosis)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Üreme problemleri, erken düşük. Damızlık boğa ve ineklere yıllık. Doğal çiftleşme yapılan sürülerde önemli",
+          "en": "Reproductive problems, early abortion. Annual for breeding bulls and cows. Important in herds with natural breeding"
+        }
+      },
+      {
+        "name": {
+          "tr": "Trichomoniasis",
+          "en": "Trichomoniasis"
+        },
+        "repeat_days": 365,
+        "initial_doses": 3,
+        "interval_days": 21,
+        "note": {
+          "tr": "Boğalara 3 doz (21 gün arayla), yıllık tekrar. Erken embriyonik ölüm, düşük. Aşı yerine test-ayıklama tercih edilebilir",
+          "en": "Bulls receive 3 doses (21 days apart), annual booster. Early embryonic death, abortion. Testing and culling may be preferred over vaccination"
+        }
+      },
+      {
+        "name": {
+          "tr": "Leptospiroz (5-yollu)",
+          "en": "Leptospirosis (5-way)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "3-6 aylıkken 2 doz, yıllık tekrar. Düşük, infertilite, süt düşüklüğü. 5 farklı serovar (pomona, grippotyphosa, hardjo, icterohaemorrhagiae, canicola)",
+          "en": "2 doses at 3-6 months, annual booster. Abortion, infertility, milk drop. 5 different serovars (pomona, grippotyphosa, hardjo, icterohaemorrhagiae, canicola)"
+        }
+      },
+      {
+        "name": {
+          "tr": "Johne's Hastalığı (Paratuberculosis)",
+          "en": "Johne's Disease (Paratuberculosis)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "1-35 günlük buzağılara tek doz. Tartışmalı etkinlik, test-ayıklama tercih edilir. Aşı testi pozitif yapabilir",
+          "en": "Single dose to 1-35 day old calves. Controversial efficacy, test-and-cull preferred. Vaccine may cause positive test"
+        }
+      },
+      {
+        "name": {
+          "tr": "Mastitis (Meme İltihabı) - E. coli J5",
+          "en": "Mastitis - E. coli J5"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 14,
+        "note": {
+          "tr": "İlk buzağılamadan 45 ve 14 gün önce, sonra her laktasyon başında. Klinik mastitis şiddetini azaltır",
+          "en": "45 and 14 days before first calving, then at start of each lactation. Reduces clinical mastitis severity"
+        }
+      },
+      {
+        "name": {
+          "tr": "Mastitis - Staphylococcus aureus",
+          "en": "Mastitis - Staphylococcus aureus"
+        },
+        "repeat_days": 180,
+        "initial_doses": 3,
+        "interval_days": 14,
+        "note": {
+          "tr": "Doğumdan önce 3 doz, sonra 6 ayda bir. Kronik mastitis için",
+          "en": "3 doses before calving, then every 6 months. For chronic mastitis"
+        }
+      },
+      {
+        "name": {
+          "tr": "Bovine Respiratory Disease (BRD) Kombine",
+          "en": "Bovine Respiratory Disease (BRD) Combination"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "IBR, BVD, PI3, BRSV, Mannheimia, Histophilus içeren kombine aşılar mevcuttur. Solunum kompleksi için kapsamlı koruma",
+          "en": "Combination vaccines containing IBR, BVD, PI3, BRSV, Mannheimia, Histophilus available. Comprehensive protection for respiratory complex"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "Koyun",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Şap Hastalığı (FMD)",
+          "en": "Foot and Mouth Disease (FMD)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 1,
+        "note": {
+          "tr": "2 aylıkken başlanır, 6 ayda bir tekrar. Zorunlu aşı, tüm koyunlara uygulanır",
+          "en": "Starts at 2 months, repeat every 6 months. Mandatory vaccine, applied to all sheep"
+        }
+      },
+      {
+        "name": {
+          "tr": "Şarbon (Anthrax)",
+          "en": "Anthrax"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "3 aylıkken başlanır, yıllık tekrar. Endemik bölgelerde zorunlu",
+          "en": "Starts at 3 months, annual booster. Mandatory in endemic areas"
+        }
+      },
+      {
+        "name": {
+          "tr": "Brucelloz (Rev-1)",
+          "en": "Brucellosis (Rev-1)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "3-6 aylık dişi kuzulara tek doz, tekrar yapılmaz. Gebe hayvanlara uygulanmaz. Zorunlu aşılama programlarına tabidir",
+          "en": "Single dose to 3-6 month old female lambs, no booster. Not for pregnant animals. Subject to mandatory vaccination programs"
+        }
+      },
+      {
+        "name": {
+          "tr": "Enterotoksemi (Clostridium perfringens Tip C ve D)",
+          "en": "Enterotoxemia (Clostridium perfringens Type C and D)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "6-8 haftalıkken 2 doz (21 gün arayla), yıllık tekrar. 'Pulpy kidney disease'. Gebe koyunlara doğumdan 4-6 hafta önce rapel",
+          "en": "2 doses at 6-8 weeks (21 days apart), annual booster. 'Pulpy kidney disease'. Booster to pregnant ewes 4-6 weeks before lambing"
+        }
+      },
+      {
+        "name": {
+          "tr": "Koyun Çiçeği (Sheep Pox)",
+          "en": "Sheep Pox"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "2 aylıkken başlanır, yıllık tekrar. Zorunlu aşı. Canlı aşı, aşılama sonrası hafif reaksiyon normal",
+          "en": "Starts at 2 months, annual booster. Mandatory vaccine. Live vaccine, mild reaction after vaccination is normal"
+        }
+      },
+      {
+        "name": {
+          "tr": "Pasteurelloz (Mannheimia/Pasteurella)",
+          "en": "Pasteurellosis (Mannheimia/Pasteurella)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "2-3 aylıkken 2 doz (21 gün arayla), yıllık tekrar. Solunum sistemi hastalıkları için",
+          "en": "2 doses at 2-3 months (21 days apart), annual booster. For respiratory diseases"
+        }
+      },
+      {
+        "name": {
+          "tr": "Clostridial Hastalıklar (8-yollu)",
+          "en": "Clostridial Diseases (8-way)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "6-8 haftalıkken 2 doz, yıllık tekrar. Enterotoksemi, tetanus, blackleg, malignant edema vb. içerir",
+          "en": "2 doses at 6-8 weeks, annual booster. Includes enterotoxemia, tetanus, blackleg, malignant edema etc."
+        }
+      },
+      {
+        "name": {
+          "tr": "Tetanoz (Tetanus)",
+          "en": "Tetanus"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Genellikle clostridial kombine aşılarda bulunur. Koyunlar tetanusa duyarlıdır, özellikle kuyruk kesimi, kırkım sonrası",
+          "en": "Usually found in clostridial combination vaccines. Sheep are susceptible to tetanus, especially after tail docking, shearing"
+        }
+      },
+      {
+        "name": {
+          "tr": "E. coli (Kuzu İshali)",
+          "en": "E. coli (Lamb Scours)"
+        },
+        "repeat_days": null,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Gebe koyunlara doğumdan 6-8 ve 2-4 hafta önce. Kolostrumla kuzuya pasif bağışıklık",
+          "en": "To pregnant ewes 6-8 and 2-4 weeks before lambing. Passive immunity to lamb through colostrum"
+        }
+      },
+      {
+        "name": {
+          "tr": "Chlamydia (Enzootic Abortion)",
+          "en": "Chlamydia (Enzootic Abortion)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Çiftleşmeden önce. Düşük nedeni. Gebe hayvanlara yapılmaz",
+          "en": "Before breeding. Cause of abortion. Not for pregnant animals"
+        }
+      },
+      {
+        "name": {
+          "tr": "Toxoplasma (Toxoplasmosis)",
+          "en": "Toxoplasma (Toxoplasmosis)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Çiftleşmeden en az 3 hafta önce, tekrar gerekmez. Düşük nedeni. Kedilerden bulaşır",
+          "en": "At least 3 weeks before breeding, no booster needed. Cause of abortion. Transmitted from cats"
+        }
+      },
+      {
+        "name": {
+          "tr": "Campylobacter (Vibriosis)",
+          "en": "Campylobacter (Vibriosis)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "Çiftleşmeden önce 2 doz, yıllık tekrar. Erken embriyonik ölüm, düşük",
+          "en": "2 doses before breeding, annual booster. Early embryonic death, abortion"
+        }
+      },
+      {
+        "name": {
+          "tr": "Bluetongue (Mavi Dil Hastalığı)",
+          "en": "Bluetongue"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Endemik bölgelerde 2 doz (21 gün arayla), yıllık tekrar. Sivrisinek yoluyla bulaşır. Birden fazla serotip için aşılar mevcut",
+          "en": "In endemic areas 2 doses (21 days apart), annual booster. Transmitted by midges. Vaccines available for multiple serotypes"
+        }
+      },
+      {
+        "name": {
+          "tr": "Orf (Contagious Ecthyma)",
+          "en": "Orf (Contagious Ecthyma)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "2-3 aylıkken canlı aşı, deri çizilerek uygulanır. Ağız-burun çevresinde yaralar. İnsanlara bulaşabilir (zoonotik)",
+          "en": "Live vaccine at 2-3 months, applied by skin scarification. Sores around mouth-nose. Can transmit to humans (zoonotic)"
+        }
+      },
+      {
+        "name": {
+          "tr": "Footrot (Ayak Çürüğü)",
+          "en": "Footrot"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "2 doz (28 gün arayla), 6 ayda bir tekrar. Dichelobacter nodosus bakterisine karşı. Etkinlik değişken, hijyen ve tırnak bakımı önemli",
+          "en": "2 doses (28 days apart), repeat every 6 months. Against Dichelobacter nodosus. Variable efficacy, hygiene and hoof care important"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "Keçi",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Şap Hastalığı (FMD)",
+          "en": "Foot and Mouth Disease (FMD)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 1,
+        "note": {
+          "tr": "2 aylıkken başlanır, 6 ayda bir tekrar. Zorunlu aşı, tüm keçilere uygulanır",
+          "en": "Starts at 2 months, repeat every 6 months. Mandatory vaccine, applied to all goats"
+        }
+      },
+      {
+        "name": {
+          "tr": "Şarbon (Anthrax)",
+          "en": "Anthrax"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "3 aylıkken başlanır, yıllık tekrar. Endemik bölgelerde zorunlu",
+          "en": "Starts at 3 months, annual booster. Mandatory in endemic areas"
+        }
+      },
+      {
+        "name": {
+          "tr": "Brucelloz (Rev-1)",
+          "en": "Brucellosis (Rev-1)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "3-6 aylık dişi oğlaklara tek doz, tekrar yapılmaz. Gebe hayvanlara uygulanmaz",
+          "en": "Single dose to 3-6 month old female kids, no booster. Not for pregnant animals"
+        }
+      },
+      {
+        "name": {
+          "tr": "Enterotoksemi (Clostridium perfringens Tip C ve D)",
+          "en": "Enterotoxemia (Clostridium perfringens Type C and D)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "6-8 haftalıkken 2 doz (21 gün arayla), yıllık tekrar. Gebe keçilere doğumdan 4-6 hafta önce rapel",
+          "en": "2 doses at 6-8 weeks (21 days apart), annual booster. Booster to pregnant does 4-6 weeks before kidding"
+        }
+      },
+      {
+        "name": {
+          "tr": "Keçi Çiçeği (Goat Pox)",
+          "en": "Goat Pox"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "2 aylıkken başlanır, yıllık tekrar. Zorunlu aşı. Canlı aşı",
+          "en": "Starts at 2 months, annual booster. Mandatory vaccine. Live vaccine"
+        }
+      },
+      {
+        "name": {
+          "tr": "Pasteurelloz (Mannheimia/Pasteurella)",
+          "en": "Pasteurellosis (Mannheimia/Pasteurella)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "2-3 aylıkken 2 doz (21 gün arayla), yıllık tekrar. Solunum sistemi hastalıkları için",
+          "en": "2 doses at 2-3 months (21 days apart), annual booster. For respiratory diseases"
+        }
+      },
+      {
+        "name": {
+          "tr": "Clostridial Hastalıklar (8-yollu)",
+          "en": "Clostridial Diseases (8-way)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "6-8 haftalıkken 2 doz, yıllık tekrar. Enterotoksemi, tetanus, blackleg vb. içerir",
+          "en": "2 doses at 6-8 weeks, annual booster. Includes enterotoxemia, tetanus, blackleg etc."
+        }
+      },
+      {
+        "name": {
+          "tr": "Tetanoz (Tetanus)",
+          "en": "Tetanus"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Genellikle clostridial kombine aşılarda bulunur. Boynuz kesimi, kastrasyon gibi işlemler öncesi önemli",
+          "en": "Usually found in clostridial combination vaccines. Important before procedures like dehorning, castration"
+        }
+      },
+      {
+        "name": {
+          "tr": "Caseous Lymphadenitis (CL - Yalancı Tüberküloz)",
+          "en": "Caseous Lymphadenitis (CL)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "6 haftalıkken 2 doz (28 gün arayla), yıllık tekrar. Lenf nodüllerinde apseler. Corynebacterium pseudotuberculosis'e karşı",
+          "en": "2 doses at 6 weeks (28 days apart), annual booster. Abscesses in lymph nodes. Against Corynebacterium pseudotuberculosis"
+        }
+      },
+      {
+        "name": {
+          "tr": "Chlamydia (Enzootic Abortion)",
+          "en": "Chlamydia (Enzootic Abortion)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Çiftleşmeden önce. Düşük nedeni. Gebe hayvanlara yapılmaz",
+          "en": "Before breeding. Cause of abortion. Not for pregnant animals"
+        }
+      },
+      {
+        "name": {
+          "tr": "Toxoplasma (Toxoplasmosis)",
+          "en": "Toxoplasma (Toxoplasmosis)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Çiftleşmeden en az 3 hafta önce, tekrar gerekmez. Düşük nedeni",
+          "en": "At least 3 weeks before breeding, no booster needed. Cause of abortion"
+        }
+      },
+      {
+        "name": {
+          "tr": "Campylobacter (Vibriosis)",
+          "en": "Campylobacter (Vibriosis)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "Çiftleşmeden önce 2 doz, yıllık tekrar. Erken embriyonik ölüm",
+          "en": "2 doses before breeding, annual booster. Early embryonic death"
+        }
+      },
+      {
+        "name": {
+          "tr": "Footrot (Ayak Çürüğü)",
+          "en": "Footrot"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "2 doz (28 gün arayla), 6 ayda bir tekrar. Keçilerde koyunlardan daha az yaygın",
+          "en": "2 doses (28 days apart), repeat every 6 months. Less common in goats than sheep"
+        }
+      },
+      {
+        "name": {
+          "tr": "Sore Mouth (Contagious Ecthyma/Orf)",
+          "en": "Sore Mouth (Contagious Ecthyma/Orf)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "2-3 aylıkken canlı aşı, deri çizilerek uygulanır. İnsanlara bulaşabilir",
+          "en": "Live vaccine at 2-3 months, applied by skin scarification. Can transmit to humans"
+        }
+      },
+      {
+        "name": {
+          "tr": "Caprine Arthritis Encephalitis (CAE)",
+          "en": "Caprine Arthritis Encephalitis (CAE)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Aşı mevcut değil. Test-ayıklama programları uygulanır. Eklem iltihabı, ensefalit",
+          "en": "No vaccine available. Test-and-cull programs applied. Arthritis, encephalitis"
+        }
+      },
+      {
+        "name": {
+          "tr": "Rabies (Kuduz)",
+          "en": "Rabies"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Risk altındaki bölgelerde 3 aylıkken, yıllık tekrar. İsteğe bağlı",
+          "en": "At 3 months in at-risk areas, annual booster. Optional"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "At",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Tetanoz (Tetanus)",
+          "en": "Tetanus"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "3-6 aylıkken 2 doz (28 gün arayla), yıllık tekrar. Temel aşı, tüm atlar için zorunlu. Yaralar için acil aşılama gerekebilir",
+          "en": "2 doses at 3-6 months (28 days apart), annual booster. Core vaccine, mandatory for all horses. Emergency vaccination may be needed for wounds"
+        }
+      },
+      {
+        "name": {
+          "tr": "İnfluenza (At Gribi)",
+          "en": "Equine Influenza"
+        },
+        "repeat_days": 180,
+        "initial_doses": 3,
+        "interval_days": 28,
+        "note": {
+          "tr": "6 aylıkken başlanır, 3 doz (0, 28, 180. günler), sonra 6 ayda bir. Yarışma atları için zorunlu. Yüksek riskli atlarda 3 ayda bir",
+          "en": "Starts at 6 months, 3 doses (days 0, 28, 180), then every 6 months. Mandatory for racing horses. Every 3 months for high-risk horses"
+        }
+      },
+      {
+        "name": {
+          "tr": "Tetanoz + İnfluenza Kombine",
+          "en": "Tetanus + Influenza Combined"
+        },
+        "repeat_days": 180,
+        "initial_doses": 3,
+        "interval_days": 28,
+        "note": {
+          "tr": "En yaygın kullanılan kombine aşı. Pratik ve ekonomik",
+          "en": "Most commonly used combination vaccine. Practical and economical"
+        }
+      },
+      {
+        "name": {
+          "tr": "Doğu/Batı At Ensefaliti (EEE/WEE)",
+          "en": "Eastern/Western Equine Encephalitis (EEE/WEE)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "3-6 aylıkken 2 doz (28 gün arayla), yıllık tekrar. Sivrisinek sezonu öncesi rapel yapılabilir. ABD'de temel aşı",
+          "en": "2 doses at 3-6 months (28 days apart), annual booster. Booster before mosquito season possible. Core vaccine in USA"
+        }
+      },
+      {
+        "name": {
+          "tr": "Venezüella At Ensefaliti (VEE)",
+          "en": "Venezuelan Equine Encephalitis (VEE)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "Endemik bölgelerde veya salgın riski varsa. Latin Amerika için önemli",
+          "en": "In endemic areas or if outbreak risk. Important for Latin America"
+        }
+      },
+      {
+        "name": {
+          "tr": "Batı Nil Virüsü",
+          "en": "West Nile Virus"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "3-6 aylıkken 2 doz (28 gün arayla), yıllık tekrar. Endemik bölgelerde önerilir. Sivrisinek sezonu öncesi rapel",
+          "en": "2 doses at 3-6 months (28 days apart), annual booster. Recommended in endemic areas. Booster before mosquito season"
+        }
+      },
+      {
+        "name": {
+          "tr": "Kuduz",
+          "en": "Rabies"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "3-6 aylıkken tek doz, yıllık tekrar. Bazı eyaletlerde/ülkelerde zorunlu. İsteğe bağlı temel aşı",
+          "en": "Single dose at 3-6 months, annual booster. Mandatory in some states/countries. Optional core vaccine"
+        }
+      },
+      {
+        "name": {
+          "tr": "Rhinopneumonitis (EHV-1/EHV-4)",
+          "en": "Rhinopneumonitis (EHV-1/EHV-4)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 3,
+        "interval_days": 28,
+        "note": {
+          "tr": "6 aylıkken başlanır, 3 doz (28 gün arayla), 6 ayda bir tekrar. Gebe kısraklara 5., 7., 9. aylarda. Solunum, düşük, nörolojik hastalık",
+          "en": "Starts at 6 months, 3 doses (28 days apart), every 6 months. To pregnant mares at 5, 7, 9 months. Respiratory, abortion, neurological disease"
+        }
+      },
+      {
+        "name": {
+          "tr": "Strangles (Apseli Nezle - Streptococcus equi)",
+          "en": "Strangles (Streptococcus equi)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 3,
+        "interval_days": 28,
+        "note": {
+          "tr": "6 aylıkken 3 doz, yıllık tekrar. İntranazal veya IM. Risk altındaki atlar (pansiyon, yarış). Yan etkiler olabilir",
+          "en": "3 doses at 6 months, annual booster. Intranasal or IM. For at-risk horses (boarding, racing). Side effects possible"
+        }
+      },
+      {
+        "name": {
+          "tr": "Potomac Horse Fever (PHF)",
+          "en": "Potomac Horse Fever (PHF)"
+        },
+        "repeat_days": 180,
+        "initial_doses": 2,
+        "interval_days": 28,
+        "note": {
+          "tr": "6 aylıkken 2 doz (28 gün arayla), 6 ayda bir. Endemik bölgelerde (ABD Doğu Sahili). Ateş, ishal, laminitis",
+          "en": "2 doses at 6 months (28 days apart), every 6 months. In endemic areas (US East Coast). Fever, diarrhea, laminitis"
+        }
+      },
+      {
+        "name": {
+          "tr": "Botulism",
+          "en": "Botulism"
+        },
+        "repeat_days": 365,
+        "initial_doses": 3,
+        "interval_days": 28,
+        "note": {
+          "tr": "Yüksek riskli bölgelerde 3 doz (28 gün arayla), yıllık tekrar. Özellikle tay hastalığı riski olan çiftliklerde",
+          "en": "In high-risk areas 3 doses (28 days apart), annual booster. Especially on farms with shaker foal syndrome risk"
+        }
+      },
+      {
+        "name": {
+          "tr": "Rotavirus (Taylar için)",
+          "en": "Rotavirus (For Foals)"
+        },
+        "repeat_days": null,
+        "initial_doses": 3,
+        "interval_days": 28,
+        "note": {
+          "tr": "Gebe kısraklara doğumdan 8-10, 4-6 hafta önce ve doğuma yakın. Tay ishaline karşı kolostrumla koruma",
+          "en": "To pregnant mares 8-10, 4-6 weeks before and close to foaling. Protection through colostrum against foal diarrhea"
+        }
+      },
+      {
+        "name": {
+          "tr": "Anthrax (Şarbon)",
+          "en": "Anthrax"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Endemik bölgelerde 6 aylıkken, yıllık tekrar. İsteğe bağlı",
+          "en": "In endemic areas at 6 months, annual booster. Optional"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "Yılan",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Paramyxovirus",
+          "en": "Paramyxovirus"
+        },
+        "repeat_days": 365,
+        "initial_doses": 2,
+        "interval_days": 21,
+        "note": {
+          "tr": "Özellikle Viper türleri için. Yılanlarda aşılama henüz rutin değil, araştırma aşamasında. Sınırlı kullanım",
+          "en": "Especially for Viper species. Vaccination in snakes not yet routine, in research phase. Limited use"
+        }
+      },
+      {
+        "name": {
+          "tr": "İnclusion Body Disease (IBD)",
+          "en": "Inclusion Body Disease (IBD)"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Boa ve Pythonlar için. Aşı henüz geliştirilmemiş, sadece araştırma aşamasında",
+          "en": "For Boas and Pythons. Vaccine not yet developed, only in research phase"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "İguana",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Sürüngen Aşısı",
+          "en": "Reptile Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "İguanalar ve diğer kertenkele türleri için standart aşılama protokolü henüz geliştirilmemiş. Hijyen ve karantina önlemleri önemli",
+          "en": "Standard vaccination protocol not yet developed for iguanas and other lizard species. Hygiene and quarantine measures important"
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "Şeker Possum",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Egzotik Memeli Aşısı",
+          "en": "Exotic Mammal Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Şeker possum'lar için rutin aşılama önerilmemektedir. Hijyen, beslenme ve stres yönetimi önemli",
+          "en": "Routine vaccination not recommended for sugar gliders. Hygiene, nutrition and stress management important"
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "Yabani kuşlar",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Yaban Hayatı Aşısı",
+          "en": "Wildlife Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani kuşlar için rutin aşılama yapılmaz",
+          "en": "Routine vaccination not performed for wild birds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "Yaban keçisi",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Yaban Hayatı Aşısı",
+          "en": "Wildlife Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani hayvanlar için rutin aşılama yapılmaz",
+          "en": "Routine vaccination not performed for wildlife"
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "Karaca",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Yaban Hayatı Aşısı",
+          "en": "Wildlife Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani hayvanlar için rutin aşılama yapılmaz",
+          "en": "Routine vaccination not performed for wildlife"
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "Tilki",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Kuduz (Oral Yem Aşısı)",
+          "en": "Rabies (Oral Bait Vaccine)"
+        },
+        "repeat_days": 365,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani tilkiler için oral kuduz aşısı kampanyaları yapılır. Yemlerle doğaya bırakılır. Halk sağlığı programlarının parçası",
+          "en": "Oral rabies vaccination campaigns conducted for wild foxes. Distributed in baits in nature. Part of public health programs"
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "Sansar",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Yaban Hayatı Aşısı",
+          "en": "Wildlife Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani hayvanlar için rutin aşılama yapılmaz",
+          "en": "Routine vaccination not performed for wildlife"
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "Porsuk",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Yaban Hayatı Aşısı",
+          "en": "Wildlife Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani hayvanlar için rutin aşılama yapılmaz",
+          "en": "Routine vaccination not performed for wildlife"
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "Kirpi (Yaban)",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Yaban Hayatı Aşısı",
+          "en": "Wildlife Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani hayvanlar için rutin aşılama yapılmaz",
+          "en": "Routine vaccination not performed for wildlife"
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "type": "Kaplumbağa (Yaban)",
+    "vaccines": [
+      {
+        "name": {
+          "tr": "Yaban Hayatı Aşısı",
+          "en": "Wildlife Vaccine"
+        },
+        "repeat_days": null,
+        "initial_doses": 1,
+        "note": {
+          "tr": "Yabani hayvanlar için rutin aşılama yapılmaz",
+          "en": "Routine vaccination not performed for wildlife"
+        }
+      }
+    ]
+  }
+]

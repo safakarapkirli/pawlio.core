@@ -1,0 +1,23 @@
+﻿[Unit]
+Description=pawlio.core server
+
+[Service]
+WorkingDirectory=/home/safak/core.apps/pawlio.core/
+ExecStart=/usr/bin/dotnet /home/safak/core.apps/pawlio.core/Pawlio.Core.dll --urls=http://127.0.0.1:5005/
+Restart=always
+RestartSec=10where 
+KillSignal=SIGINT
+SyslogIdentifier=pawlio.service
+User=safak
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
+
+#sudo systemctl daemon-reload
+#sudo nano /etc/systemd/system/pawlio.service
+#sudo systemctl enable pawlio.service
+#sudo systemctl start pawlio.service
+#sudo systemctl status pawlio.service
+#sudo journalctl -fu pawlio.service --since "2026-01-01" --until "2026-06-01 00:00"

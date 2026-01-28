@@ -1,0 +1,1094 @@
+[
+  {
+    "id": 1,
+    "type": "Köpek",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tüy Kesimi",
+          "en": "Hair Cutting"
+        },
+        "repeat_days": 45,
+        "note": {
+          "tr": "Yaz aylarında daha sık yapılmalı, tüy tipine göre değişir.",
+          "en": "Should be done more frequently in summer, varies by coat type."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Nail Trimming"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Canlı dokuya zarar vermemek için dikkatli kesilmeli.",
+          "en": "Cut carefully to avoid damaging the quick."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Diş Temizliği",
+          "en": "Dental Cleaning"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Anestezi gerektirebilir, öncesinde kan tahlili önerilir.",
+          "en": "May require anesthesia, blood test recommended beforehand."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Kulak Temizliği",
+          "en": "Ear Cleaning"
+        },
+        "repeat_days": 14,
+        "note": {
+          "tr": "Sarkık kulaklı ırklar daha sık kontrol edilmeli.",
+          "en": "Floppy-eared breeds need more frequent checks."
+        }
+      },
+      {
+        "id": 5,
+        "name": {
+          "tr": "Anal Bez Sıkma",
+          "en": "Anal Gland Expression"
+        },
+        "repeat_days": 60,
+        "note": {
+          "tr": "Tıkanma belirtileri görülürse daha sık yapılmalı.",
+          "en": "Should be done more often if blockage signs appear."
+        }
+      },
+      {
+        "id": 6,
+        "name": {
+          "tr": "Banyo",
+          "en": "Bathing"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Köpek şampuanı kullanılmalı, aşırı banyo cilt kuruluğuna neden olur.",
+          "en": "Use dog shampoo, excessive bathing causes dry skin."
+        }
+      },
+      {
+        "id": 7,
+        "name": {
+          "tr": "Parazit Kontrolü (Dış)",
+          "en": "External Parasite Control"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Pire ve kene ilacı düzenli uygulanmalı.",
+          "en": "Flea and tick medication should be applied regularly."
+        }
+      },
+      {
+        "id": 8,
+        "name": {
+          "tr": "Parazit Kontrolü (İç)",
+          "en": "Internal Parasite Control"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Dışkı testi sonucuna göre ilaç seçimi yapılmalı.",
+          "en": "Medication choice based on fecal test results."
+        }
+      },
+      {
+        "id": 9,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Yaşlı köpeklerde 3 ayda bir önerilir.",
+          "en": "Recommended every 3 months for senior dogs."
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "Kedi",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tüy Kesimi",
+          "en": "Hair Cutting"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Genelde uzun tüylü ırklar için gerekir, stres yaratabilir.",
+          "en": "Usually needed for long-haired breeds, may cause stress."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Nail Trimming"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Ön pençeler daha hızlı uzar, sadece uç kısmı kesilmeli.",
+          "en": "Front claws grow faster, trim only the tip."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Diş Temizliği",
+          "en": "Dental Cleaning"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Diş taşı oluşumu yaygındır, anestezi altında yapılır.",
+          "en": "Tartar buildup is common, performed under anesthesia."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Kulak Temizliği",
+          "en": "Ear Cleaning"
+        },
+        "repeat_days": 21,
+        "note": {
+          "tr": "Kırmızılık veya koku varsa veteriner kontrolü gerekir.",
+          "en": "Requires vet check if redness or odor present."
+        }
+      },
+      {
+        "id": 5,
+        "name": {
+          "tr": "Tüy Bakımı/Tarama",
+          "en": "Grooming/Brushing"
+        },
+        "repeat_days": 7,
+        "note": {
+          "tr": "Tüy yumağı oluşumunu önler, özellikle uzun tüylülerde önemli.",
+          "en": "Prevents hairball formation, especially important for long-haired."
+        }
+      },
+      {
+        "id": 6,
+        "name": {
+          "tr": "Parazit Kontrolü (Dış)",
+          "en": "External Parasite Control"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Köpek ürünleri kedilere toksiktir, kedi için özel ürün kullanılmalı.",
+          "en": "Dog products are toxic to cats, use cat-specific products."
+        }
+      },
+      {
+        "id": 7,
+        "name": {
+          "tr": "Parazit Kontrolü (İç)",
+          "en": "Internal Parasite Control"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "İç mekan kedileri bile parazit taşıyabilir.",
+          "en": "Even indoor cats can carry parasites."
+        }
+      },
+      {
+        "id": 8,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Böbrek ve tiroid kontrolü 7 yaş üstü için kritiktir.",
+          "en": "Kidney and thyroid check critical for cats over 7."
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "Kuş",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Gaga Kesimi",
+          "en": "Beak Trimming"
+        },
+        "repeat_days": 60,
+        "note": {
+          "tr": "Aşırı uzama nörolojik sorun belirtisi olabilir.",
+          "en": "Excessive growth may indicate neurological issues."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Nail Trimming"
+        },
+        "repeat_days": 45,
+        "note": {
+          "tr": "Kan damarından kaçınmak için ışık altında kesilmeli.",
+          "en": "Cut under light to avoid blood vessel."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Kanat Kırpma",
+          "en": "Wing Clipping"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Tüy değişimi sonrası tekrar yapılmalı, kaçış önlemi.",
+          "en": "Redo after molting, prevents escape."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Akarlar ve iç parazitler için veteriner muayenesi şart.",
+          "en": "Vet examination required for mites and internal parasites."
+        }
+      },
+      {
+        "id": 5,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Kloaka ve dışkı muayenesi önemlidir.",
+          "en": "Cloaca and fecal examination important."
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "Tavşan",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Nail Trimming"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Derin kesilmemeli, kanama riski yüksektir.",
+          "en": "Don't cut deep, high risk of bleeding."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Diş Kontrolü",
+          "en": "Dental Check"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Dişler sürekli büyür, maloklüzyon kontrolü gerekir.",
+          "en": "Teeth grow continuously, malocclusion check needed."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Tüy Bakımı",
+          "en": "Fur Grooming"
+        },
+        "repeat_days": 7,
+        "note": {
+          "tr": "Tüy değişim döneminde günlük taranmalı, tıkalama riski var.",
+          "en": "Daily brushing during molting, blockage risk exists."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Kulak akarı ve iç parazit kontrolü yapılmalı.",
+          "en": "Ear mite and internal parasite control needed."
+        }
+      },
+      {
+        "id": 5,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Sindirim sistemi sorunları erken tespit edilmeli.",
+          "en": "Digestive issues should be detected early."
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "Kaplumbağa",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Kabuk Muayenesi",
+          "en": "Shell Examination"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Çatlak ve yumuşama kontrolü önemlidir.",
+          "en": "Check for cracks and softening is important."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Gaga Kesimi",
+          "en": "Beak Trimming"
+        },
+        "repeat_days": 120,
+        "note": {
+          "tr": "Aşırı uzama beslenme sorununa yol açar.",
+          "en": "Excessive growth causes feeding problems."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Nail Trimming"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Karada yaşayan türler için daha sık gerekir.",
+          "en": "More frequent for terrestrial species."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Dışkı testi ile iç parazit taraması yapılmalı.",
+          "en": "Internal parasite screening via fecal test needed."
+        }
+      },
+      {
+        "id": 5,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Göz ve solunum yolu enfeksiyonları kontrol edilmeli.",
+          "en": "Check for eye and respiratory infections."
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "İnek",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Hoof Trimming"
+        },
+        "repeat_days": 120,
+        "note": {
+          "tr": "Topallık ve enfeksiyon önlemek için düzenli yapılmalı.",
+          "en": "Regular trimming prevents lameness and infection."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Meme Sağlığı Kontrolü",
+          "en": "Udder Health Check"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Mastit erken tespiti için sürekli izlenmeli.",
+          "en": "Monitor continuously for early mastitis detection."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "İç ve dış parazitler üretimi düşürür.",
+          "en": "Internal and external parasites reduce production."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Vücut kondisyon skoru ve üreme sağlığı değerlendirilmeli.",
+          "en": "Body condition score and reproductive health assessed."
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "Koyun",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Hoof Trimming"
+        },
+        "repeat_days": 120,
+        "note": {
+          "tr": "Ayak çürüklüğü yaygındır, ıslak zeminde daha sık kontrol.",
+          "en": "Foot rot is common, check more often in wet ground."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Kırkım",
+          "en": "Shearing"
+        },
+        "repeat_days": 365,
+        "note": {
+          "tr": "Yıllık yapılır, sıcak havalarda hayvan refahı için kritik.",
+          "en": "Done yearly, critical for animal welfare in hot weather."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 60,
+        "note": {
+          "tr": "İç parazitler sürü sağlığını ciddi etkiler.",
+          "en": "Internal parasites seriously affect herd health."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Diş kontrolü ve vücut kondisyonu değerlendirilmeli.",
+          "en": "Dental check and body condition should be assessed."
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "Keçi",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Hoof Trimming"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Keçiler tırmanmayı sever, tırnaklar hızlı aşınır ama düzenli bakım gerekir.",
+          "en": "Goats love climbing, hooves wear fast but need regular care."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Boynuz Bakımı",
+          "en": "Horn Care"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Boynuzlar düzensiz büyürse kesim gerekebilir.",
+          "en": "Horns may need trimming if growing irregularly."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 60,
+        "note": {
+          "tr": "Keçiler parazitlere çok duyarlıdır, gözkapağı rengi kontrol edilmeli.",
+          "en": "Goats very sensitive to parasites, check eyelid color."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Solunum ve sindirim sistemi hastalıkları sık görülür.",
+          "en": "Respiratory and digestive diseases are common."
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "At",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Nal Bakımı",
+          "en": "Horseshoeing"
+        },
+        "repeat_days": 45,
+        "note": {
+          "tr": "Nallı atlar 6-8 haftada bir bakım görmeli.",
+          "en": "Shod horses need care every 6-8 weeks."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Diş Törpüleme",
+          "en": "Dental Floating"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Keskin diş uçları oluşur, beslenmeyi etkiler.",
+          "en": "Sharp tooth points form, affects feeding."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Rotasyon programı uygulanmalı, direnç oluşmamalı.",
+          "en": "Rotation program needed, avoid resistance."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Kolik ve topallık belirtileri izlenmeli.",
+          "en": "Monitor for colic and lameness signs."
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "Yılan",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Deri Değişimi Kontrolü",
+          "en": "Shedding Check"
+        },
+        "repeat_days": 60,
+        "note": {
+          "tr": "Nem yetersizliğinde deri değişimi sorunlu olur.",
+          "en": "Inadequate humidity causes shedding problems."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 120,
+        "note": {
+          "tr": "Akar ve iç parazit taraması yapılmalı.",
+          "en": "Mite and internal parasite screening needed."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Solunum enfeksiyonu ve stomatit kontrolü önemli.",
+          "en": "Respiratory infection and stomatitis check important."
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "İguana",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Nail Trimming"
+        },
+        "repeat_days": 60,
+        "note": {
+          "tr": "Uzun tırnaklar yaralanmaya neden olabilir.",
+          "en": "Long nails can cause injury."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Deri Kontrolü",
+          "en": "Skin Check"
+        },
+        "repeat_days": 30,
+        "note": {
+          "tr": "Deri değişimi ve mantarsal enfeksiyon takibi yapılmalı.",
+          "en": "Monitor shedding and fungal infection."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Dışkı muayenesi ile iç parazitler tespit edilir.",
+          "en": "Internal parasites detected via fecal exam."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Metabolik kemik hastalığı ve böbrek yetmezliği riski yüksektir.",
+          "en": "High risk of metabolic bone disease and kidney failure."
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "Şeker Possum",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Tırnak Kesimi",
+          "en": "Nail Trimming"
+        },
+        "repeat_days": 45,
+        "note": {
+          "tr": "Tırmanma yetenekleri için dikkatli kesilmeli.",
+          "en": "Cut carefully to preserve climbing ability."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Diş Kontrolü",
+          "en": "Dental Check"
+        },
+        "repeat_days": 90,
+        "note": {
+          "tr": "Şekerli diyet diş sorunlarına yol açar.",
+          "en": "Sugary diet leads to dental problems."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": 120,
+        "note": {
+          "tr": "İç ve dış parazitler nadir ama kontrol edilmeli.",
+          "en": "Internal and external parasites rare but check needed."
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "tr": "Genel Sağlık Kontrolü",
+          "en": "General Health Check"
+        },
+        "repeat_days": 180,
+        "note": {
+          "tr": "Obezite ve beslenme dengesizliği kontrolü önemli.",
+          "en": "Obesity and nutritional imbalance check important."
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "Yabani kuşlar",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Yaralanma Müdahalesi",
+          "en": "Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Kırıklar ve yumuşak doku yaraları acil tedavi gerektirir.",
+          "en": "Fractures and soft tissue wounds require emergency care."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Genel Muayene",
+          "en": "General Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Yabani kuşlar strese karşı hassastır, hızlı muayene şart.",
+          "en": "Wild birds sensitive to stress, quick exam essential."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Rehabilitasyon Değerlendirmesi",
+          "en": "Rehabilitation Assessment"
+        },
+        "repeat_days": 7,
+        "note": {
+          "tr": "Doğaya salım için uçuş yeteneği test edilmeli.",
+          "en": "Flight ability must be tested for release."
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "Yaban keçisi",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Genel Sağlık Muayenesi",
+          "en": "General Health Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Yakalanma ve muayene ciddi stres yaratır, sedasyon gerekebilir.",
+          "en": "Capture and exam cause severe stress, sedation may be needed."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Yaralanma Tedavisi",
+          "en": "Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Av veya düşme sonucu yaralanmalar tedavi edilir.",
+          "en": "Injuries from hunting or falls are treated."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Ağır parazit yükü zayıflamaya neden olur.",
+          "en": "Heavy parasite load causes emaciation."
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "Karaca",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Genel Sağlık Muayenesi",
+          "en": "General Health Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Ekstrem strese hassastır, miyopati riski yüksektir.",
+          "en": "Extremely stress-sensitive, high myopathy risk."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Yaralanma Tedavisi",
+          "en": "Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Trafik kazaları ve köpek saldırıları yaygın yaralanma nedenleri.",
+          "en": "Traffic accidents and dog attacks are common injury causes."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Rehabilitasyon",
+          "en": "Rehabilitation"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "İnsan temasını minimize etmek doğaya uyum için kritik.",
+          "en": "Minimizing human contact critical for wilderness adaptation."
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "Tilki",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Genel Sağlık Muayenesi",
+          "en": "General Health Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Kuduz riski nedeniyle koruyucu ekipman kullanılmalı.",
+          "en": "Protective equipment required due to rabies risk."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Yaralanma Tedavisi",
+          "en": "Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Tuzak yaralanmaları ve trafik kazaları sık görülür.",
+          "en": "Trap injuries and traffic accidents common."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Uyuz yaygın, zoonotik parazitler dikkat gerektirir.",
+          "en": "Mange common, zoonotic parasites require caution."
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "Sansar",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Genel Sağlık Muayenesi",
+          "en": "General Health Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Agresif olabilir, güvenli tutuş teknikleri şart.",
+          "en": "Can be aggressive, safe handling techniques essential."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Yaralanma Tedavisi",
+          "en": "Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Kavgalar ve tuzaklar yaralanma nedenleridir.",
+          "en": "Fights and traps are injury causes."
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "Porsuk",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Genel Sağlık Muayenesi",
+          "en": "General Health Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Güçlü çeneleri vardır, sedasyon önerilir.",
+          "en": "Strong jaws present, sedation recommended."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Yaralanma Tedavisi",
+          "en": "Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Yol çarpmaları en yaygın yaralanma nedenidir.",
+          "en": "Road strikes most common injury cause."
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "Kirpi (Yaban)",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Genel Sağlık Muayenesi",
+          "en": "General Health Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Dikenleri eldiven kullanımını gerektirir.",
+          "en": "Spines require glove use."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Parazit Kontrolü",
+          "en": "Parasite Control"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Keneler ve iç parazitler yaygındır.",
+          "en": "Ticks and internal parasites are common."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Yaralanma Tedavisi",
+          "en": "Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Çim biçme makineleri ve trafik yaralanmalara neden olur.",
+          "en": "Lawn mowers and traffic cause injuries."
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "type": "Kaplumbağa (Yaban)",
+    "services": [
+      {
+        "id": 1,
+        "name": {
+          "tr": "Kabuk Yaralanma Tedavisi",
+          "en": "Shell Injury Treatment"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Çatlaklar enfeksiyon riski taşır, uzun iyileşme süreci gerektirir.",
+          "en": "Cracks carry infection risk, require long healing process."
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "tr": "Genel Sağlık Muayenesi",
+          "en": "General Health Examination"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Dehidrasyon ve solunum enfeksiyonları kontrol edilmeli.",
+          "en": "Dehydration and respiratory infections should be checked."
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "tr": "Rehabilitasyon",
+          "en": "Rehabilitation"
+        },
+        "repeat_days": null,
+        "note": {
+          "tr": "Doğal habitat koşulları sağlanarak salıma hazırlanır.",
+          "en": "Prepared for release by providing natural habitat conditions."
+        }
+      }
+    ]
+  }
+]

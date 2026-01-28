@@ -1,0 +1,1630 @@
+[
+  {
+    "tr": "Evcil",
+    "en": "Companion Animals",
+    "types": [
+      {
+        "id": 1,
+        "tr": "Köpek",
+        "en": "Dog",
+        "breeds": [
+          {
+            "tr": "Golden Retriever",
+            "en": "Golden Retriever"
+          },
+          {
+            "tr": "Labrador",
+            "en": "Labrador"
+          },
+          {
+            "tr": "Kangal",
+            "en": "Kangal"
+          },
+          {
+            "tr": "Alman Kurdu",
+            "en": "German Shepherd"
+          },
+          {
+            "tr": "Pomeranian",
+            "en": "Pomeranian"
+          },
+          {
+            "tr": "Terrier",
+            "en": "Terrier"
+          },
+          {
+            "tr": "Husky",
+            "en": "Siberian Husky"
+          },
+          {
+            "tr": "Bulldog",
+            "en": "Bulldog"
+          },
+          {
+            "tr": "Beagle",
+            "en": "Beagle"
+          },
+          {
+            "tr": "Rottweiler",
+            "en": "Rottweiler"
+          },
+          {
+            "tr": "Doberman",
+            "en": "Doberman Pinscher"
+          },
+          {
+            "tr": "Akita",
+            "en": "Akita"
+          },
+          {
+            "tr": "Chihuahua",
+            "en": "Chihuahua"
+          },
+          {
+            "tr": "Maltese Terrier",
+            "en": "Maltese"
+          },
+          {
+            "tr": "Shih Tzu",
+            "en": "Shih Tzu"
+          },
+          {
+            "tr": "Pug",
+            "en": "Pug"
+          },
+          {
+            "tr": "Cocker Spaniel",
+            "en": "Cocker Spaniel"
+          },
+          {
+            "tr": "Border Collie",
+            "en": "Border Collie"
+          },
+          {
+            "tr": "Dalmaçyalı",
+            "en": "Dalmatian"
+          },
+          {
+            "tr": "Boxer",
+            "en": "Boxer"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Siyah",
+            "en": "Black"
+          },
+          {
+            "tr": "Beyaz",
+            "en": "White"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown"
+          },
+          {
+            "tr": "Sarı",
+            "en": "Yellow"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey"
+          },
+          {
+            "tr": "Krem",
+            "en": "Cream"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "tr": "Kedi",
+        "en": "Cat",
+        "breeds": [
+          {
+            "tr": "British Shorthair",
+            "en": "British Shorthair"
+          },
+          {
+            "tr": "Van Kedisi",
+            "en": "Turkish Van"
+          },
+          {
+            "tr": "Ankara Kedisi",
+            "en": "Turkish Angora"
+          },
+          {
+            "tr": "Siyam",
+            "en": "Siamese"
+          },
+          {
+            "tr": "Scottish Fold",
+            "en": "Scottish Fold"
+          },
+          {
+            "tr": "Persian",
+            "en": "Persian"
+          },
+          {
+            "tr": "Maine Coon",
+            "en": "Maine Coon"
+          },
+          {
+            "tr": "Bengal",
+            "en": "Bengal"
+          },
+          {
+            "tr": "Ragdoll",
+            "en": "Ragdoll"
+          },
+          {
+            "tr": "Sphynx",
+            "en": "Sphynx"
+          },
+          {
+            "tr": "Russian Blue",
+            "en": "Russian Blue"
+          },
+          {
+            "tr": "Abyssinian",
+            "en": "Abyssinian"
+          },
+          {
+            "tr": "Birman",
+            "en": "Birman"
+          },
+          {
+            "tr": "Norwegian Forest",
+            "en": "Norwegian Forest"
+          },
+          {
+            "tr": "Exotic Shorthair",
+            "en": "Exotic Shorthair"
+          },
+          {
+            "tr": "Devon Rex",
+            "en": "Devon Rex"
+          },
+          {
+            "tr": "Savannah",
+            "en": "Savannah"
+          },
+          {
+            "tr": "Munchkin",
+            "en": "Munchkin"
+          },
+          {
+            "tr": "Chartreux",
+            "en": "Chartreux"
+          },
+          {
+            "tr": "Burmese",
+            "en": "Burmese"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Tekir",
+            "en": "Tabby",
+            "hex": "#8B4513,#D2691E,#000000"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Turuncu",
+            "en": "Orange",
+            "hex": "#FF8C00"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Üç Renkli",
+            "en": "Calico",
+            "hex": "#FF8C00,#000000,#FFFFFF"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "tr": "Kuş",
+        "en": "Bird",
+        "breeds": [
+          {
+            "tr": "Muhabbet Kuşu",
+            "en": "Budgerigar"
+          },
+          {
+            "tr": "Sultan Papağanı",
+            "en": "Cockatiel"
+          },
+          {
+            "tr": "Jako",
+            "en": "African Grey Parrot"
+          },
+          {
+            "tr": "Macaw",
+            "en": "Macaw"
+          },
+          {
+            "tr": "Kanarya",
+            "en": "Canary"
+          },
+          {
+            "tr": "Cennet Papağanı",
+            "en": "Lovebird"
+          },
+          {
+            "tr": "Kakadu",
+            "en": "Cockatoo"
+          },
+          {
+            "tr": "Forpus",
+            "en": "Parrotlet"
+          },
+          {
+            "tr": "Rosella",
+            "en": "Rosella"
+          },
+          {
+            "tr": "Konur",
+            "en": "Conure"
+          },
+          {
+            "tr": "Zebra İspinozu",
+            "en": "Zebra Finch"
+          },
+          {
+            "tr": "Hint Bülbülü",
+            "en": "Indian Ringneck"
+          },
+          {
+            "tr": "Gouldian İspinozu",
+            "en": "Gouldian Finch"
+          },
+          {
+            "tr": "Kumru",
+            "en": "Dove"
+          },
+          {
+            "tr": "Java İspinozu",
+            "en": "Java Sparrow"
+          },
+          {
+            "tr": "Elmas Güvercini",
+            "en": "Diamond Dove"
+          },
+          {
+            "tr": "Alexandrine Papağanı",
+            "en": "Alexandrine Parakeet"
+          },
+          {
+            "tr": "Quaker Papağanı",
+            "en": "Quaker Parrot"
+          },
+          {
+            "tr": "Senegal Papağanı",
+            "en": "Senegal Parrot"
+          },
+          {
+            "tr": "Bourke Papağanı",
+            "en": "Bourke's Parakeet"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Yeşil",
+            "en": "Green",
+            "hex": "#228B22"
+          },
+          {
+            "tr": "Sarı",
+            "en": "Yellow",
+            "hex": "#FFD700"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Mavi",
+            "en": "Blue",
+            "hex": "#1E90FF"
+          },
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Kırmızı",
+            "en": "Red",
+            "hex": "#DC143C"
+          },
+          {
+            "tr": "Turuncu",
+            "en": "Orange",
+            "hex": "#FF8C00"
+          },
+          {
+            "tr": "Renkli",
+            "en": "Multicolor",
+            "hex": "#228B22,#FFD700,#DC143C,#1E90FF"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "tr": "Tavşan",
+        "en": "Rabbit",
+        "breeds": [
+          {
+            "tr": "Hollanda Lop",
+            "en": "Holland Lop"
+          },
+          {
+            "tr": "Lionhead",
+            "en": "Lionhead"
+          },
+          {
+            "tr": "Mini Rex",
+            "en": "Mini Rex"
+          },
+          {
+            "tr": "Netherland Dwarf",
+            "en": "Netherland Dwarf"
+          },
+          {
+            "tr": "Angora",
+            "en": "Angora"
+          },
+          {
+            "tr": "Flemish Giant",
+            "en": "Flemish Giant"
+          },
+          {
+            "tr": "English Lop",
+            "en": "English Lop"
+          },
+          {
+            "tr": "French Lop",
+            "en": "French Lop"
+          },
+          {
+            "tr": "Mini Lop",
+            "en": "Mini Lop"
+          },
+          {
+            "tr": "Rex",
+            "en": "Rex"
+          },
+          {
+            "tr": "Polish",
+            "en": "Polish"
+          },
+          {
+            "tr": "Californian",
+            "en": "Californian"
+          },
+          {
+            "tr": "Himalayan",
+            "en": "Himalayan"
+          },
+          {
+            "tr": "Dutch",
+            "en": "Dutch"
+          },
+          {
+            "tr": "Hotot",
+            "en": "Blanc de Hotot"
+          },
+          {
+            "tr": "Jersey Wooly",
+            "en": "Jersey Wooly"
+          },
+          {
+            "tr": "American Fuzzy Lop",
+            "en": "American Fuzzy Lop"
+          },
+          {
+            "tr": "Harlequin",
+            "en": "Harlequin"
+          },
+          {
+            "tr": "Chinchilla",
+            "en": "Chinchilla"
+          },
+          {
+            "tr": "Silver Fox",
+            "en": "Silver Fox"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Alaca",
+            "en": "Spotted",
+            "hex": "#FFFFFF,#000000"
+          },
+          {
+            "tr": "Krem",
+            "en": "Cream",
+            "hex": "#FFFDD0"
+          },
+          {
+            "tr": "Turuncu",
+            "en": "Orange",
+            "hex": "#FF8C00"
+          },
+          {
+            "tr": "Gümüş",
+            "en": "Silver",
+            "hex": "#C0C0C0"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "tr": "Kaplumbağa",
+        "en": "Turtle",
+        "breeds": [
+          {
+            "tr": "Kırmızı Yanaklı Su Kaplumbağası",
+            "en": "Red Eared Slider"
+          },
+          {
+            "tr": "Yunan Kaplumbağası",
+            "en": "Greek Tortoise"
+          },
+          {
+            "tr": "Sarı Yanaklı Su Kaplumbağası",
+            "en": "Yellow Bellied Slider"
+          },
+          {
+            "tr": "Hermann Kaplumbağası",
+            "en": "Hermann's Tortoise"
+          },
+          {
+            "tr": "Leopar Kaplumbağası",
+            "en": "Leopard Tortoise"
+          },
+          {
+            "tr": "Russian Kaplumbağası",
+            "en": "Russian Tortoise"
+          },
+          {
+            "tr": "Sulcata Kaplumbağası",
+            "en": "Sulcata Tortoise"
+          },
+          {
+            "tr": "Kutu Kaplumbağası",
+            "en": "Box Turtle"
+          },
+          {
+            "tr": "Çamur Kaplumbağası",
+            "en": "Mud Turtle"
+          },
+          {
+            "tr": "Misk Kaplumbağası",
+            "en": "Musk Turtle"
+          },
+          {
+            "tr": "Harita Kaplumbağası",
+            "en": "Map Turtle"
+          },
+          {
+            "tr": "Boyun Kıvrık Kaplumbağa",
+            "en": "Side Neck Turtle"
+          },
+          {
+            "tr": "Reeves Kaplumbağası",
+            "en": "Reeves Turtle"
+          },
+          {
+            "tr": "Boyalı Kaplumbağa",
+            "en": "Painted Turtle"
+          },
+          {
+            "tr": "Kırmızı Ayaklı Kaplumbağa",
+            "en": "Red Footed Tortoise"
+          },
+          {
+            "tr": "Sarı Ayaklı Kaplumbağa",
+            "en": "Yellow Footed Tortoise"
+          },
+          {
+            "tr": "Marginated Kaplumbağası",
+            "en": "Marginated Tortoise"
+          },
+          {
+            "tr": "Pancake Kaplumbağası",
+            "en": "Pancake Tortoise"
+          },
+          {
+            "tr": "Yıldız Kaplumbağası",
+            "en": "Star Tortoise"
+          },
+          {
+            "tr": "Akdeniz Kaplumbağası",
+            "en": "Mediterranean Tortoise"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Yeşil",
+            "en": "Green",
+            "hex": "#228B22"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Sarı Çizgili",
+            "en": "Yellow Striped",
+            "hex": "#8B4513,#FFD700"
+          },
+          {
+            "tr": "Zeytin Yeşili",
+            "en": "Olive Green",
+            "hex": "#556B2F"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Kırmızı Benekli",
+            "en": "Red Spotted",
+            "hex": "#8B4513,#DC143C"
+          },
+          {
+            "tr": "Sarı",
+            "en": "Yellow",
+            "hex": "#FFD700"
+          },
+          {
+            "tr": "Desenli",
+            "en": "Patterned",
+            "hex": "#8B4513,#FFD700,#000000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tr": "Çiftlik",
+    "en": "Farm Animals",
+    "types": [
+      {
+        "id": 6,
+        "tr": "İnek",
+        "en": "Cattle",
+        "breeds": [
+          {
+            "tr": "Holstein",
+            "en": "Holstein"
+          },
+          {
+            "tr": "Jersey",
+            "en": "Jersey"
+          },
+          {
+            "tr": "Simental",
+            "en": "Simmental"
+          },
+          {
+            "tr": "Angus",
+            "en": "Angus"
+          },
+          {
+            "tr": "Hereford",
+            "en": "Hereford"
+          },
+          {
+            "tr": "Montofon",
+            "en": "Montbeliarde"
+          },
+          {
+            "tr": "Boz Irk",
+            "en": "Grey Steppe"
+          },
+          {
+            "tr": "Güney Anadolu Kırmızısı",
+            "en": "South Anatolian Red"
+          },
+          {
+            "tr": "Doğu Anadolu Kırmızısı",
+            "en": "East Anatolian Red"
+          },
+          {
+            "tr": "Yerli Kara",
+            "en": "Native Black"
+          },
+          {
+            "tr": "Limousin",
+            "en": "Limousin"
+          },
+          {
+            "tr": "Charolais",
+            "en": "Charolais"
+          },
+          {
+            "tr": "Belgian Blue",
+            "en": "Belgian Blue"
+          },
+          {
+            "tr": "Brown Swiss",
+            "en": "Brown Swiss"
+          },
+          {
+            "tr": "Brahman",
+            "en": "Brahman"
+          },
+          {
+            "tr": "Highland",
+            "en": "Highland Cattle"
+          },
+          {
+            "tr": "Shorthorn",
+            "en": "Shorthorn"
+          },
+          {
+            "tr": "Devon",
+            "en": "Devon"
+          },
+          {
+            "tr": "Gelbvieh",
+            "en": "Gelbvieh"
+          },
+          {
+            "tr": "Ayrshire",
+            "en": "Ayrshire"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Siyah Beyaz",
+            "en": "Black White",
+            "hex": "#000000,#FFFFFF"
+          },
+          {
+            "tr": "Kahverengi Beyaz",
+            "en": "Brown White",
+            "hex": "#8B4513,#FFFFFF"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Kırmızı",
+            "en": "Red",
+            "hex": "#A0522D"
+          },
+          {
+            "tr": "Boz",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Sarı Kahverengi",
+            "en": "Yellow Brown",
+            "hex": "#DAA520,#8B4513"
+          },
+          {
+            "tr": "Kırmızı Beyaz",
+            "en": "Red White",
+            "hex": "#A0522D,#FFFFFF"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "tr": "Koyun",
+        "en": "Sheep",
+        "breeds": [
+          {
+            "tr": "Merinos",
+            "en": "Merino"
+          },
+          {
+            "tr": "Sakız",
+            "en": "Chios"
+          },
+          {
+            "tr": "İvesi",
+            "en": "Awassi"
+          },
+          {
+            "tr": "Akkaraman",
+            "en": "Akkaraman"
+          },
+          {
+            "tr": "Morkaraman",
+            "en": "Morkaraman"
+          },
+          {
+            "tr": "Kıvırcık",
+            "en": "Kivircik"
+          },
+          {
+            "tr": "Karayaka",
+            "en": "Karayaka"
+          },
+          {
+            "tr": "Dağlıç",
+            "en": "Daglic"
+          },
+          {
+            "tr": "Hemşin",
+            "en": "Hemsin"
+          },
+          {
+            "tr": "Norduz",
+            "en": "Norduz"
+          },
+          {
+            "tr": "Suffolk",
+            "en": "Suffolk"
+          },
+          {
+            "tr": "Dorset",
+            "en": "Dorset"
+          },
+          {
+            "tr": "Hampshire",
+            "en": "Hampshire"
+          },
+          {
+            "tr": "Texel",
+            "en": "Texel"
+          },
+          {
+            "tr": "Romney",
+            "en": "Romney"
+          },
+          {
+            "tr": "Lincoln",
+            "en": "Lincoln"
+          },
+          {
+            "tr": "Ile de France",
+            "en": "Ile de France"
+          },
+          {
+            "tr": "Charollais",
+            "en": "Charollais"
+          },
+          {
+            "tr": "East Friesian",
+            "en": "East Friesian"
+          },
+          {
+            "tr": "Lacaune",
+            "en": "Lacaune"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Krem",
+            "en": "Cream",
+            "hex": "#FFFDD0"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Siyah Beyaz",
+            "en": "Black White",
+            "hex": "#000000,#FFFFFF"
+          },
+          {
+            "tr": "Kırçıl",
+            "en": "Mixed Grey",
+            "hex": "#A9A9A9,#696969"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "tr": "Keçi",
+        "en": "Goat",
+        "breeds": [
+          {
+            "tr": "Kıl Keçisi",
+            "en": "Hair Goat"
+          },
+          {
+            "tr": "Saanen",
+            "en": "Saanen"
+          },
+          {
+            "tr": "Malta",
+            "en": "Maltese"
+          },
+          {
+            "tr": "Kilis",
+            "en": "Kilis"
+          },
+          {
+            "tr": "Norduz",
+            "en": "Norduz"
+          },
+          {
+            "tr": "Honamlı",
+            "en": "Honamli"
+          },
+          {
+            "tr": "Ankara Keçisi (Tiftik)",
+            "en": "Angora"
+          },
+          {
+            "tr": "Halep",
+            "en": "Aleppo"
+          },
+          {
+            "tr": "Gökçeada",
+            "en": "Gokceada"
+          },
+          {
+            "tr": "Alpine",
+            "en": "Alpine"
+          },
+          {
+            "tr": "Nubian",
+            "en": "Nubian"
+          },
+          {
+            "tr": "Toggenburg",
+            "en": "Toggenburg"
+          },
+          {
+            "tr": "LaMancha",
+            "en": "LaMancha"
+          },
+          {
+            "tr": "Boer",
+            "en": "Boer"
+          },
+          {
+            "tr": "Nigerian Dwarf",
+            "en": "Nigerian Dwarf"
+          },
+          {
+            "tr": "Pygmy",
+            "en": "Pygmy"
+          },
+          {
+            "tr": "Cashmere",
+            "en": "Cashmere"
+          },
+          {
+            "tr": "Oberhasli",
+            "en": "Oberhasli"
+          },
+          {
+            "tr": "Sable",
+            "en": "Sable"
+          },
+          {
+            "tr": "Kiko",
+            "en": "Kiko"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Krem",
+            "en": "Cream",
+            "hex": "#FFFDD0"
+          },
+          {
+            "tr": "Alaca",
+            "en": "Spotted",
+            "hex": "#FFFFFF,#000000"
+          },
+          {
+            "tr": "Kızıl",
+            "en": "Reddish",
+            "hex": "#A0522D"
+          },
+          {
+            "tr": "Kestane",
+            "en": "Chestnut",
+            "hex": "#954535"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "tr": "At",
+        "en": "Horse",
+        "breeds": [
+          {
+            "tr": "Arap Atı",
+            "en": "Arabian"
+          },
+          {
+            "tr": "İngiliz Atı",
+            "en": "Thoroughbred"
+          },
+          {
+            "tr": "Midilli",
+            "en": "Pony"
+          },
+          {
+            "tr": "Safkan Arap",
+            "en": "Purebred Arabian"
+          },
+          {
+            "tr": "Anadolu Atı",
+            "en": "Anatolian"
+          },
+          {
+            "tr": "Karacabey",
+            "en": "Karacabey"
+          },
+          {
+            "tr": "Holis",
+            "en": "Holsteiner"
+          },
+          {
+            "tr": "Friesian",
+            "en": "Friesian"
+          },
+          {
+            "tr": "Andalusian",
+            "en": "Andalusian"
+          },
+          {
+            "tr": "Quarter Horse",
+            "en": "Quarter Horse"
+          },
+          {
+            "tr": "Paint Horse",
+            "en": "Paint Horse"
+          },
+          {
+            "tr": "Appaloosa",
+            "en": "Appaloosa"
+          },
+          {
+            "tr": "Morgan",
+            "en": "Morgan"
+          },
+          {
+            "tr": "Mustang",
+            "en": "Mustang"
+          },
+          {
+            "tr": "Percheron",
+            "en": "Percheron"
+          },
+          {
+            "tr": "Clydesdale",
+            "en": "Clydesdale"
+          },
+          {
+            "tr": "Tennessee Walker",
+            "en": "Tennessee Walking Horse"
+          },
+          {
+            "tr": "Lipizzaner",
+            "en": "Lipizzaner"
+          },
+          {
+            "tr": "Akhal Teke",
+            "en": "Akhal-Teke"
+          },
+          {
+            "tr": "Hanover",
+            "en": "Hanoverian"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Doru",
+            "en": "Bay",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Kır",
+            "en": "Grey",
+            "hex": "#D3D3D3"
+          },
+          {
+            "tr": "Al",
+            "en": "Chestnut",
+            "hex": "#CD853F"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Kula",
+            "en": "Cremello",
+            "hex": "#FFF8DC"
+          },
+          {
+            "tr": "Doru Alaca",
+            "en": "Bay Pinto",
+            "hex": "#8B4513,#FFFFFF"
+          },
+          {
+            "tr": "Al Alaca",
+            "en": "Chestnut Pinto",
+            "hex": "#CD853F,#FFFFFF"
+          },
+          {
+            "tr": "Boz",
+            "en": "Roan",
+            "hex": "#BC8F8F"
+          },
+          {
+            "tr": "Benekli",
+            "en": "Spotted",
+            "hex": "#D2691E,#FFFFFF"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tr": "Egzotik",
+    "en": "Exotic Animals",
+    "types": [
+      {
+        "id": 10,
+        "tr": "Yılan",
+        "en": "Snake",
+        "breeds": [
+          {
+            "tr": "Top Piton",
+            "en": "Ball Python"
+          },
+          {
+            "tr": "Mısır Yılanı",
+            "en": "Corn Snake"
+          },
+          {
+            "tr": "Kral Yılanı",
+            "en": "King Snake"
+          },
+          {
+            "tr": "Süt Yılanı",
+            "en": "Milk Snake"
+          },
+          {
+            "tr": "Boa Constrictor",
+            "en": "Boa Constrictor"
+          },
+          {
+            "tr": "Yılan Piton",
+            "en": "Python Regius"
+          },
+          {
+            "tr": "Garter Yılanı",
+            "en": "Garter Snake"
+          },
+          {
+            "tr": "Kum Boası",
+            "en": "Sand Boa"
+          },
+          {
+            "tr": "Yeşil Ağaç Piton",
+            "en": "Green Tree Python"
+          },
+          {
+            "tr": "Carpet Piton",
+            "en": "Carpet Python"
+          },
+          {
+            "tr": "Rat Snake",
+            "en": "Rat Snake"
+          },
+          {
+            "tr": "Hognose Yılanı",
+            "en": "Hognose Snake"
+          },
+          {
+            "tr": "Rainbow Boa",
+            "en": "Rainbow Boa"
+          },
+          {
+            "tr": "California Kral Yılanı",
+            "en": "California Kingsnake"
+          },
+          {
+            "tr": "Bull Snake",
+            "en": "Bull Snake"
+          },
+          {
+            "tr": "Rosy Boa",
+            "en": "Rosy Boa"
+          },
+          {
+            "tr": "Blood Python",
+            "en": "Blood Python"
+          },
+          {
+            "tr": "Reticulated Python",
+            "en": "Reticulated Python"
+          },
+          {
+            "tr": "Burmese Python",
+            "en": "Burmese Python"
+          },
+          {
+            "tr": "Kenyan Sand Boa",
+            "en": "Kenyan Sand Boa"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Sarı",
+            "en": "Yellow",
+            "hex": "#FFD700"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Albino",
+            "en": "Albino",
+            "hex": "#FFF8DC"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Turuncu",
+            "en": "Orange",
+            "hex": "#FF8C00"
+          },
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Yeşil",
+            "en": "Green",
+            "hex": "#228B22"
+          },
+          {
+            "tr": "Kırmızı",
+            "en": "Red",
+            "hex": "#DC143C"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Desenli",
+            "en": "Patterned",
+            "hex": "#8B4513,#FFD700,#000000"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "tr": "İguana",
+        "en": "Iguana",
+        "breeds": [
+          {
+            "tr": "Yeşil İguana",
+            "en": "Green Iguana"
+          },
+          {
+            "tr": "Mavi İguana",
+            "en": "Blue Iguana"
+          },
+          {
+            "tr": "Rhinoceros İguana",
+            "en": "Rhinoceros Iguana"
+          },
+          {
+            "tr": "Çöl İguanası",
+            "en": "Desert Iguana"
+          },
+          {
+            "tr": "Kırmızı İguana",
+            "en": "Red Iguana"
+          },
+          {
+            "tr": "Kaya İguanası",
+            "en": "Rock Iguana"
+          },
+          {
+            "tr": "Fiji Banded İguana",
+            "en": "Fiji Banded Iguana"
+          },
+          {
+            "tr": "Spiny Tailed İguana",
+            "en": "Spiny Tailed Iguana"
+          },
+          {
+            "tr": "Chuckwalla",
+            "en": "Chuckwalla"
+          },
+          {
+            "tr": "Cuban Rock İguana",
+            "en": "Cuban Rock Iguana"
+          },
+          {
+            "tr": "Grand Cayman İguana",
+            "en": "Grand Cayman Iguana"
+          },
+          {
+            "tr": "Jamaican İguana",
+            "en": "Jamaican Iguana"
+          },
+          {
+            "tr": "Yucatan Spiny Tailed İguana",
+            "en": "Yucatan Spiny Tailed Iguana"
+          },
+          {
+            "tr": "Black Spiny Tailed İguana",
+            "en": "Black Spiny Tailed Iguana"
+          },
+          {
+            "tr": "Lesser Antillean İguana",
+            "en": "Lesser Antillean Iguana"
+          },
+          {
+            "tr": "Marine İguana",
+            "en": "Marine Iguana"
+          },
+          {
+            "tr": "Land İguana",
+            "en": "Galapagos Land Iguana"
+          },
+          {
+            "tr": "Santa Fe Land İguana",
+            "en": "Santa Fe Land Iguana"
+          },
+          {
+            "tr": "Turks and Caicos İguana",
+            "en": "Turks and Caicos Iguana"
+          },
+          {
+            "tr": "Anegada İguana",
+            "en": "Anegada Iguana"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Yeşil",
+            "en": "Green",
+            "hex": "#228B22"
+          },
+          {
+            "tr": "Turkuaz",
+            "en": "Turquoise",
+            "hex": "#40E0D0"
+          },
+          {
+            "tr": "Mavi",
+            "en": "Blue",
+            "hex": "#1E90FF"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Turuncu",
+            "en": "Orange",
+            "hex": "#FF8C00"
+          },
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Kırmızı",
+            "en": "Red",
+            "hex": "#DC143C"
+          },
+          {
+            "tr": "Sarı",
+            "en": "Yellow",
+            "hex": "#FFD700"
+          },
+          {
+            "tr": "Zeytin Yeşili",
+            "en": "Olive Green",
+            "hex": "#556B2F"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "tr": "Şeker Possum",
+        "en": "Sugar Glider",
+        "breeds": [
+          {
+            "tr": "Standart",
+            "en": "Standard"
+          },
+          {
+            "tr": "Leucistic",
+            "en": "Leucistic"
+          },
+          {
+            "tr": "Albino",
+            "en": "Albino"
+          },
+          {
+            "tr": "Cremino",
+            "en": "Cremino"
+          },
+          {
+            "tr": "Platinum",
+            "en": "Platinum"
+          },
+          {
+            "tr": "Mosaic",
+            "en": "Mosaic"
+          },
+          {
+            "tr": "Lion",
+            "en": "Lion"
+          },
+          {
+            "tr": "Ruby Leucistic",
+            "en": "Ruby Leucistic"
+          },
+          {
+            "tr": "White Face",
+            "en": "White Face"
+          },
+          {
+            "tr": "Cinnamon",
+            "en": "Cinnamon"
+          },
+          {
+            "tr": "Chocolate",
+            "en": "Chocolate"
+          },
+          {
+            "tr": "Caramel",
+            "en": "Caramel"
+          },
+          {
+            "tr": "Black Beauty",
+            "en": "Black Beauty"
+          },
+          {
+            "tr": "Ringtail Mosaic",
+            "en": "Ringtail Mosaic"
+          },
+          {
+            "tr": "True Platinum Mosaic",
+            "en": "True Platinum Mosaic"
+          },
+          {
+            "tr": "White Mosaic",
+            "en": "White Mosaic"
+          },
+          {
+            "tr": "Piebald",
+            "en": "Piebald"
+          },
+          {
+            "tr": "Ruby Platinum",
+            "en": "Ruby Platinum"
+          },
+          {
+            "tr": "Mahogany",
+            "en": "Mahogany"
+          },
+          {
+            "tr": "Cremeface",
+            "en": "Cremeface"
+          }
+        ],
+        "colors": [
+          {
+            "tr": "Gri",
+            "en": "Grey",
+            "hex": "#808080"
+          },
+          {
+            "tr": "Krem",
+            "en": "Cream",
+            "hex": "#FFFDD0"
+          },
+          {
+            "tr": "Beyaz",
+            "en": "White",
+            "hex": "#FFFFFF"
+          },
+          {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "hex": "#8B4513"
+          },
+          {
+            "tr": "Siyah",
+            "en": "Black",
+            "hex": "#000000"
+          },
+          {
+            "tr": "Platin",
+            "en": "Platinum",
+            "hex": "#E5E4E2"
+          },
+          {
+            "tr": "Tarçın",
+            "en": "Cinnamon",
+            "hex": "#D2691E"
+          },
+          {
+            "tr": "Çikolata",
+            "en": "Chocolate",
+            "hex": "#7B3F00"
+          },
+          {
+            "tr": "Karamel",
+            "en": "Caramel",
+            "hex": "#C68E17"
+          },
+          {
+            "tr": "Mozaik",
+            "en": "Mosaic",
+            "hex": "#808080,#FFFFFF"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tr": "Vahşi",
+    "en": "Wildlife",
+    "types": [
+      {
+        "id": 13,
+        "tr": "Yabani kuşlar",
+        "en": "Wild Birds"
+      },
+      {
+        "id": 14,
+        "tr": "Yaban keçisi",
+        "en": "Wild Goat"
+      },
+      {
+        "id": 15,
+        "tr": "Karaca",
+        "en": "Roe Deer"
+      },
+      {
+        "id": 16,
+        "tr": "Tilki",
+        "en": "Fox"
+      },
+      {
+        "id": 17,
+        "tr": "Sansar",
+        "en": "Marten"
+      },
+      {
+        "id": 18,
+        "tr": "Porsuk",
+        "en": "Badger"
+      },
+      {
+        "id": 19,
+        "tr": "Kirpi (Yaban)",
+        "en": "Hedgehog (Wild)"
+      },
+      {
+        "id": 20,
+        "tr": "Kaplumbağa (Yaban)",
+        "en": "Turtle (Wild)"
+      }
+    ],
+    "breeds": [],
+    "colors": []
+  }
+]
